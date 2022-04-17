@@ -71,7 +71,7 @@
 
 
          <tr class="len 阿修羅ちゃん Ado" id="B1-1-1">
-           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-1"></td>
+           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-1"></td>
            <td class="songtitle songsearch 阿修羅ちゃん あしゅらちゃん A1">阿修羅ちゃん</td>
            <td class="singer A2">Ado</td>
            <td class="date A3">2022/4/2</td>
@@ -588,39 +588,38 @@ function reset(){
 
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
-  category.textContent = null;
-  singerlist.forEach(function(value){
+  category.selectedIndex = 0;
+  for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
-    op.value = value.cd;
-    op.text = value.label;
-    op.class = value.class;
+    op.value = singerlist[i].cd;
+    op.text = singerlist[i].label;
+    op.class = singerlist[i].class;
     if (category2.selectedIndex == 0){
-      category.appendChild(op);
+      category[i].appendChild(op);
     } else {
       if ( value.class == category2.getAttribute("class") ){
-        category.appendChild(op);
+        category[i].appendChild(op);
       }
     }
-  });
+  };
 }
 
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
-  category2.textContent = null;
-  songlist.forEach(function(value){
+  category2.selectedIndex = 0;
+  for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
-    op.value = value.cd;
-    op.text = value.label;
-    op.class = value.class;
+    op.value = songlist[i].cd;
+    op.text = songlist[i].label;
+    op.class = songlist[i].class;
     if (category.selectedIndex == 0){
-      category.selectedIndex = 0;
-      category2.appendChild(op);
+      category2[i].appendChild(op);
     } else {
       if ( value.class == category.getAttribute("class") ){
-          category2.appendChild(op);
+          category2[i].appendChild(op);
       }
     }
-  });
+  };
 }
 
  //お気に入り動作
