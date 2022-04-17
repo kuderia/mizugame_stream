@@ -595,10 +595,10 @@ function ChangeSelectboxSing() {
     op.text = singerlist[i].label;
     op.class = singerlist[i].class;
     if (category2.selectedIndex == 0){
-      category[i].appendChild(op);
+      category.appendChild(op);
     } else {
       if ( value.class == category2.getAttribute("class") ){
-        category[i].appendChild(op);
+        category.appendChild(op);
       }
     }
   };
@@ -613,10 +613,10 @@ function ChangeSelectboxSong() {
     op.text = songlist[i].label;
     op.class = songlist[i].class;
     if (category.selectedIndex == 0){
-      category2[i].appendChild(op);
+      category2.appendChild(op);
     } else {
       if ( value.class == category.getAttribute("class") ){
-          category2[i].appendChild(op);
+          category2.appendChild(op);
       }
     }
   };
