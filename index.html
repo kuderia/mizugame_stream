@@ -480,6 +480,8 @@
  }
 
  //セレクトボックス表示内容変更
+ category.selectedIndex=0;
+ category2.selectedIndex=0;
  ChangeSelectboxSing();
  ChangeSelectboxSong();
 
@@ -503,23 +505,18 @@ function changeCategory() {
 
   for (var i = 0; i < AECounts ; i++){
     tagname1 = AmountElements[i];
-    if (category2.value == "non" || category2.selectedIndex == 0){
-      if(category.value == "non"){
-        tagname1.style.display = '';
-      } else {
-        if(tagname1.classList.contains(category.value) == true){
-          tagname1.style.display = '';
-        } else {
-          tagname1.style.display = 'none';
-        }
-      }
+    if(category.value == "non"){
+      tagname1.style.display = '';
     } else {
-      if(tagname1.classList.contains(category2.value) == true){
+      if(tagname1.classList.contains(category.value) == true){
         tagname1.style.display = '';
       } else {
-        tagname1.style.display = "none"
+        tagname1.style.display = 'none';
       }
     }
+  }
+  if (category2.value !== "non" && category2.selectedIndex !== 0){
+    category2.selectedIndex = 0;
   }
 
   if (checkboxA.checked == true){
@@ -537,26 +534,18 @@ function changeCategory2() {
     if (category.value == "non" || category2.selectedIndex == 0){
       if (category2.value == "non"){
         tagname2.style.display = "";
-      } else {
-        if (tagname2.classList.contains(category2.value) == true){
-          tagname2.style.display = "";
-        } else {
-          tagname2.style.display = "none";
-        }
       }
     } else {
-      if (tagname2.classList.contains(category.value) == true){
+      if (tagname2.classList.contains(category2.value) == true){
         tagname2.style.display = "";
       } else {
         tagname2.style.display = "none";
       }
-    }
+    } 
   }
-
   if (checkboxA.checked == true){
     favcheck();
   }
-  ChangeSelectboxSing();
 }
 
 
@@ -588,38 +577,28 @@ function reset(){
 
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
-  category.selectedIndex = 0;
   var op = document.createElement("option");
   for(i=0;i<singerlist.length;i++){
     op.value = singerlist[i].cd;
     op.text = singerlist[i].label;
-    op.class = singerlist[i].class;
-    if (category2.selectedIndex == 0){
-      category.appendChild(op);
-    } else {
-      if ( value.class == category2.getAttribute("class") ){
-        category.appendChild(op);
-      }
-    }
-  };
+    category.appendChild(op);
+  }
 }
 
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
-  category2.selectedIndex = 0;
   var op = document.createElement("option");
   for(i=0;i<singerlist.length;i++){
     op.value = songlist[i].cd;
     op.text = songlist[i].label;
-    op.class = songlist[i].class;
     if (category.selectedIndex == 0){
       category2.appendChild(op);
     } else {
-      if ( value.class == category.getAttribute("class") ){
-          category2.appendChild(op);
+      if ( category.value == list[i].class ){
+        category2.appendChild(op);
       }
     }
-  };
+  }
 }
 
  //お気に入り動作
