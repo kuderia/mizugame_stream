@@ -699,7 +699,7 @@ function songsearch(){
 
   if(SearcBoxElement.value != "" || SearcBoxElement.value != null){
     for (var i=0; i<AECounts; i++){
-       if(SongsearchElements[i].indexOf(SearcBoxElement.value) == -1){
+       if(SongsearchElements[i].getAttribute("class").indexOf(SearcBoxElement.value) == -1){
          AmountElements[i].style.display = "none";
        } else {
          AmountElements[i].style.display = "";
