@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <title>水瓶ミア 歌まとめ</title>
+ <link rel="stylesheet" href="/style.css">
+</head>
+
+<style>
+ #users {
+  height:80vh;
+  overflow-y: scroll;
+ }
+
+  .sort.desc:after {
+    content: "▼";
+  }
+
+  .sort.asc:after {
+    content: "▲";
+  }
+</style>
+
+<body>
+ <div id="body">
+  <div class="fav">
+   <h1 id="strcolor1">水瓶ミア 歌まとめ</h1>
+　 <span id="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
+   <button class="remove" id="remove" onclick="favremove()">お気に入り削除</button></br>
+
+
+   <div id="category-title"><span id="strcolor3">　ジャンル選択</span>
+    <select name="category" id="category">
+     <option hidden>ジャンル選択</option>
+     <option value="non">選択なし</option>
+     <option value="sing">歌枠/歌ってみた</option>
+     <option value="ASMR">ASMR</option>
+     <option value="talk">雑談</option>
+     <option value="game">ゲーム</option>
+     <option value="exclusive">メン限</option>
+     <option value="situation">シチュエーションボイス</option>
+     <option value="song">歌ってみた</option>
+    </select>　<button id="genrereset" onclick="genrereset()">選択解除</button>
+   </div>
+
+    <div id="category-second-title">
+     <select name="category-second" id="category-second">
+      <option value="">選択してください</option>
+     </select>
+    </div>
+    <div id="search-title">
+    　<input type ="search" class="search" id="search" onchange="songsearch()"placeholder="曲名を入力">
+    　<div style="display: inline-block; _display: inline;" id="radiotitle1"><input type="radio" name="radio" id="radio1" onclick="radiocheck()" checked></div>
+    　<div style="display: inline-block; _display: inline;" id="radiotitle2"><input type="radio" name="radio" id="radio2" onclick="radiocheck()"></div>
+    </div>
+  </div>
+
+   <div id="users">
+    <table>
+     <thead>
+      <tr>
+       <th class="A0 checkbox"></th>
+       <th class="sort A1" data-sort="genre">ジャンル</th>
+       <th class="sort A2" data-sort="songtitle">曲名</th>
+       <th class="sort A3" data-sort="tag">内容</th>
+       <th class="sort A4" data-sort="gametitle">ゲームタイトル</th>
+       <th class="sort A5" data-sort="date">配信日</th>
+       <th class="A6" data-sort="title">配信タイトル</th>
+      </tr>
+     </thead>
+
+     <tbody class="list">
+<!--歌枠-->
+
+       <tr class="len singA" id="B1-1">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle A2"></td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB アンパンマンマーチ" id="B1-1-1">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-1"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">アンパンマンマーチ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=11m59s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ヴァンパイア" id="B1-1-2">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-2"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ヴァンパイア</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=17m33s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ヴィラン" id="B1-1-3">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-3"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ヴィラン</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=21m54s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ダダダダ天使" id="B1-1-4">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-4"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ダダダダ天使</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=27m31s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 恋愛裁判" id="B1-1-5">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-5"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">恋愛裁判</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=32m48s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 踊" id="B1-1-6">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-6"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">踊</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=38m12s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 怪物" id="B1-1-7">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-7"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">怪物</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=43m57s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ファンサ" id="B1-1-8">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-8"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ファンサ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=49m42s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 乙女解剖" id="B1-1-9">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-9"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">乙女解剖</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=55m34s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ベノム" id="B1-1-10">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-10"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ベノム</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=1h1m54s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB プロトディスコ" id="B1-1-11">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-11"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">プロトディスコ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=1h6m31s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 少女レイ" id="B1-1-12">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-12"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">少女レイ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=1h13m42s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB flos" id="B1-1-13">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-13"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">flos</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/13</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=1h18m56s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len singA" id="B1-2">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle A2"></td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 夢をかなえてドラえもん" id="B1-2-1">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-1"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">夢をかなえてドラえもん</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=10m42s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB シンデレラ" id="B1-2-2">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-2"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">シンデレラ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=17m00s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB KING" id="B1-2-3">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-3"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">KING</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=20m54s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB やさしさに包まれたなら" id="B1-2-4">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-4"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">やさしさに包まれたなら</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=26m25s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB いのちの名前" id="B1-2-5">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-5"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">いのちの名前</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=31m43s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 風になる" id="B1-2-6">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-6"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">風になる</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=38m47s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB シル・ヴ・プレジデント" id="B1-2-7">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-7"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">シル・ヴ・プレジデント</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=44m34s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 紅蓮華" id="B1-2-8">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-8"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">紅蓮華</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=50m1s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB グッバイ宣言" id="B1-2-9">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-9"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">グッバイ宣言</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=56m56s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ロキ" id="B1-2-10">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-10"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ロキ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h2m10s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB マトリョシカ" id="B1-2-11">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-11"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">マトリョシカ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h7m32s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ラブリー少女" id="B1-2-12">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-12"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ラブリー少女</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h13m16s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB ドラマツルギー" id="B1-2-13">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-13"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">ドラマツルギー</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h18m47s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 妄想感傷代償連盟" id="B1-2-14">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-14"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">妄想感傷代償連盟</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h24m55s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 死神" id="B1-2-15">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-15"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">死神</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h32m00s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB オリオンをなぞる" id="B1-2-16">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-16"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">オリオンをなぞる</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h37m10s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB 夜に駆ける" id="B1-2-17">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-17"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">夜に駆ける</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h44m7s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+       <tr class="len sing singB Godknows..." id="B1-2-18">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-18"></td>
+         <td class="genre A1">歌枠</td>
+         <td class="songtitle songsearch A2">God knows...</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2021/11/21</td>
+         <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/7yhMB97_Dfw?t=1h49m32s', 'blank')">【歌枠/singing】アニソン・ボカロ曲で盛り上がろぉ🎧💖【新人Vtuber/夜想といき】</button></td>
+       </tr>
+
+
+<!--歌ってみた-->
+
+       <tr class="len sing song エメラルドシティ" id="B2-1">
+         <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="7-2"></td>
+         <td class="genre A1">歌ってみた</td>
+         <td class="songtitle songsearch A2">エメラルドシティ</td>
+         <td class="tag A3"></td>
+         <td class="gametitle A4"></td>
+         <td class="date A5">2018/9/29</td>
+         <td class="title"><button class="btn" onclick="window.open('https://youtu.be/w_i0vzngMIo', 'blank')">エメラルドシティ / emerald city - TOKOTOKO(西沢さんP) feat.水瓶ミア【歌ってみた】</button></td>
+       </tr>
+
+     </tbody>
+    </table>
+   </div>
+ </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+ <script>
+  var options = {
+    valueNames: ['genre', 'songtitle', 'tag', 'gametitle', 'date',]
+  };
+
+  var userList = new List('users', options);
+
+  userList.sort('date', { order: 'desc' });
+ </script>
+
+ <script>
+
+ var ColumnElements = document.getElementsByClassName("A1");
+ var ColumnCounts = ColumnElements.length;
+ var AmountElements = document.getElementsByClassName("len");
+ var AECounts = AmountElements.length;
+ var CheckboxElements = document.getElementsByClassName("checkbox_check");
+ var CECounts = CheckboxElements.length;
+ var FavElements;
+ var FavLoad;
+ var Favid;
+ var checkboxA = document.getElementById("checkboxA");
+
+ window.onload = function(){
+
+ //チェックボックス読み込み
+ for (var i = 0; i < CECounts; i++){
+  FavElements = CheckboxElements[i];
+  Favid = FavElements.getAttribute("id");
+  FavLoad = JSON.parse(localStorage.getItem(Favid));
+  if (FavLoad == true){
+   FavElements.checked = true;
+  }
+ }
+
+ //セレクトボックス非表示
+ document.getElementById("category-second").style.display = "none";
+
+
+ //セレクトボックス変更時動作
+ category = document.getElementById("category");
+ category.onchange = changeCategory;
+ category2 = document.getElementById("category-second");
+ category2.onchange = changeCategory2;
+
+ //検索欄非表示
+ document.getElementById("search").style.display = "none";
+
+ //行調整
+ linehidden();
+
+ //列調整
+ categorynon();
+
+}
+
+//セレクトボックス１動作
+function changeCategory() {
+
+ var changedCategory = category.value;
+
+ //セレクトボックス２タイトル表示
+ if (changedCategory == "sing" || changedCategory == "song") {
+  if (document.getElementById("div1") != null){
+   document.getElementById("div1").remove();
+  }
+  document.getElementById("category-second-title").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="div1">　曲名</div>');
+  document.getElementById("search").style.display = "";
+ } else if (changedCategory == "ASMR") {
+  if (document.getElementById("div1") != null){
+   document.getElementById("div1").remove();
+  }
+  document.getElementById("category-second-title").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="div1">　内容</div>');
+  document.getElementById("search").style.display = "none";
+ } else if (changedCategory == "game") {
+  if (document.getElementById("div1") != null){
+   document.getElementById("div1").remove();
+  }
+  document.getElementById("category-second-title").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="div1">　ゲームタイトル</div>');
+  document.getElementById("search").style.display = "none";
+ } else {
+  if (document.getElementById("div1") != null){
+   document.getElementById("div1").remove();
+  }
+  document.getElementById("search").style.display = "none";
+ }
+
+ //行調整
+ linehidden();
+
+ if (checkboxA.checked == true){
+  favcheck();
+ }
+
+ //列、ソート、セレクトボックス調整
+ if(changedCategory == "non"){
+  categorynon();
+ } else if(changedCategory == "sing" ||  changedCategory == "song"){
+  ChangeSelectboxSong();
+  categorysong();
+ } else if (changedCategory == "ASMR") {
+  ChangeSelectboxASMR();
+  categoryasmr();
+ } else if (changedCategory == "game") {
+  ChangeSelectboxGame();
+  categorygame();
+ } else if (changedCategory == "talk" || changedCategory == "exclusive" || changedCategory == "situation"){
+  categoryother();
+ }
+}
+
+//ラジオボタン動作
+function radiocheck(){
+ if (document.getElementById("radio1").checked == true ){
+  userList.sort('songtitle', { order: 'asc' });
+ } else if (document.getElementById("radio2").checked == true ){
+  userList.sort('date', { order: 'desc' });
+ }
+}
+
+
+//選択解除
+function genrereset(){
+ category.selectedIndex=0;
+ categorynon();
+ linehidden();
+ if (document.getElementById("div1") != null){
+  document.getElementById("div1").remove();
+ }
+ document.getElementById("search").style.display = "none";
+ checkboxA.checked = false;
+}
+
+
+//セレクトボックス(2)表示内容変更
+function ChangeSelectboxSong() {
+
+ category2.textContent = null;
+
+ var SelectboxSong = [
+  {cd:"non", label:"選択なし"},
+  {cd:"Re:Re:", label:"Re:Re:"},
+  {cd:"愛して愛して愛して", label:"愛して愛して愛して"},
+  {cd:"愛言葉Ⅲ", label:"愛言葉Ⅲ"},
+  {cd:"会いたい", label:"会いたい"},
+  {cd:"Ibegyou", label:"I beg you"},
+  {cd:"愛をこめて花束を", label:"愛をこめて花束を"},
+  {cd:"青空のナミダ", label:"青空のナミダ"},
+  {cd:"青空のラプソディ", label:"青空のラプソディ"},
+  {cd:"赤いスイートピー", label:"赤いスイートピー"},
+  {cd:"AXIA～ダイスキでダイキライ～", label:"AXIA～ダイスキでダイキライ～"},
+  {cd:"again", label:"again"},
+  {cd:"アゲハ蝶", label:"アゲハ蝶"},
+  {cd:"貴方解剖純愛歌～死ね～", label:"貴方解剖純愛歌～死ね～"},
+  {cd:"アニマル", label:"アニマル"},
+  {cd:"雨とカプチーノ", label:"雨とカプチーノ"},
+  {cd:"アンコール", label:"アンコール"},
+  {cd:"アンパンマンマーチ", label:"アンパンマンマーチ"},
+  {cd:"行くぜっ！怪盗少女", label:"行くぜっ！怪盗少女"},
+  {cd:"いけないボーダーライン", label:"いけないボーダーライン"},
+  {cd:"It'salltoomuch", label:"It's all too much"},
+  {cd:"いつも何度でも", label:"いつも何度でも"},
+  {cd:"射手座☆午後九時Don'tbelate", label:"射手座☆午後九時Don't be late"},
+  {cd:"いのちの名前", label:"いのちの名前"},
+  {cd:"異邦人", label:"異邦人"},
+  {cd:"ヴァージニティー", label:"ヴァージニティー"},
+  {cd:"ヴァンパイア", label:"ヴァンパイア"},
+  {cd:"ヴィラン", label:"ヴィラン"},
+  {cd:"うっせぇわ", label:"うっせぇわ"},
+  {cd:"うまぴょい伝説", label:"うまぴょい伝説"},
+  {cd:"うみなおし", label:"うみなおし"},
+  {cd:"鱗", label:"鱗"},
+  {cd:"YELL", label:"YELL"},
+  {cd:"エンヴィーベイビー", label:"エンヴィーベイビー"},
+  {cd:"おジャ魔女カーニバル!!", label:"おジャ魔女カーニバル!!"},
+  {cd:"おじゃま虫", label:"おじゃま虫"},
+  {cd:"踊", label:"踊"},
+  {cd:"乙女解剖", label:"乙女解剖"},
+  {cd:"Z女戦争", label:"Z女戦争"},
+  {cd:"おどるポンポコリン", label:"おどるポンポコリン"},
+  {cd:"おねがいダーリン", label:"おねがいダーリン"},
+  {cd:"oblivious", label:"oblivious"},
+  {cd:"オリオンをなぞる", label:"オリオンをなぞる"},
+  {cd:"カーニバルハッピー", label:"カーニバルハッピー"},
+  {cd:"ガーネット", label:"ガーネット"},
+  {cd:"怪物", label:"怪物"},
+  {cd:"楓", label:"楓"},
+  {cd:"火炎", label:"火炎"},
+  {cd:"崖の上のポニョ", label:"崖の上のポニョ"},
+  {cd:"飾りじゃないのよ涙は", label:"飾りじゃないのよ涙は"},
+  {cd:"風になる", label:"風になる"},
+  {cd:"風の谷のナウシカ", label:"風の谷のナウシカ"},
+  {cd:"風待ちジェット", label:"風待ちジェット"},
+  {cd:"カタオモイ", label:"カタオモイ"},
+  {cd:"奏", label:"奏"},
+  {cd:"カブトムシ", label:"カブトムシ"},
+  {cd:"神っぽいな", label:"神っぽいな"},
+  {cd:"かもめが翔んだ日", label:"かもめが翔んだ日"},
+  {cd:"COLORS", label:"COLORS"},
+  {cd:"からくりピエロ", label:"からくりピエロ"},
+  {cd:"彼氏はいません今夜だけ", label:"彼氏はいません今夜だけ"},
+  {cd:"カロ・ミオ・ベン", label:"カロ・ミオ・ベン"},
+  {cd:"変わらないもの", label:"変わらないもの"},
+  {cd:"気まぐれメルシィ", label:"気まぐれメルシィ"},
+  {cd:"気まぐれロマンティック", label:"気まぐれロマンティック"},
+  {cd:"君じゃなきゃダメみたい", label:"君じゃなきゃダメみたい"},
+  {cd:"君という花", label:"君という花"},
+  {cd:"君の知らない物語", label:"君の知らない物語"},
+  {cd:"君をのせて", label:"君をのせて"},
+  {cd:"逆光", label:"逆光"},
+  {cd:"きゅうくらりん", label:"きゅうくらりん"},
+  {cd:"キュートなカノジョ", label:"キュートなカノジョ"},
+  {cd:"ギラギラ", label:"ギラギラ"},
+  {cd:"KING", label:"KING"},
+  {cd:"グッバイ宣言", label:"グッバイ宣言"},
+  {cd:"CryBaby", label:"Cry Baby"},
+  {cd:"紅蓮華", label:"紅蓮華"},
+  {cd:"檄！帝国華撃団", label:"檄！帝国華撃団"},
+  {cd:"消せない罪", label:"消せない罪"},
+  {cd:"群青", label:"群青"},
+  {cd:"恋", label:"恋"},
+  {cd:"コイスルオトメ", label:"コイスルオトメ"},
+  {cd:"恋人失格", label:"恋人失格"},
+  {cd:"甲賀忍法帖", label:"甲賀忍法帖"},
+  {cd:"公然の秘密", label:"公然の秘密"},
+  {cd:"ゴーストルール", label:"ゴーストルール"},
+  {cd:"ココ☆ナツ", label:"ココ☆ナツ"},
+  {cd:"Godknows...", label:"God knows..."},
+  {cd:"粉雪", label:"粉雪"},
+  {cd:"コネクト", label:"コネクト"},
+  {cd:"この狭い鳥籠の中で", label:"この狭い鳥籠の中で"},
+  {cd:"sakura", label:"sakura"},
+  {cd:"SAKURA", label:"SAKURA"},
+  {cd:"さくら(独唱)", label:"さくら(独唱)"},
+  {cd:"桜", label:"桜"},
+  {cd:"桜流し", label:"桜流し"},
+  {cd:"桜の時", label:"桜の時"},
+  {cd:"桜の花びらたち", label:"桜の花びらたち"},
+  {cd:"小夜子", label:"小夜子"},
+  {cd:"さよならの夏～コクリコ坂から～", label:"さよならの夏～コクリコ坂から～"},
+  {cd:"3月9日", label:"3月9日"},
+  {cd:"残酷な天使のテーゼ", label:"残酷な天使のテーゼ"},
+  {cd:"366日", label:"366日"},
+  {cd:"さんぽ", label:"さんぽ"},
+  {cd:"三文小説", label:"三文小説"},
+  {cd:"secretbase～君がくれたもの～", label:"secret base～君がくれたもの～"},
+  {cd:"しかばねの踊り", label:"しかばねの踊り"},
+  {cd:"死神", label:"死神"},
+  {cd:"Shangri-La", label:"Shangri-La"},
+  {cd:"シュガーソングとビターステップ", label:"シュガーソングとビターステップ"},
+  {cd:"修羅場", label:"修羅場"},
+  {cd:"少女レイ", label:"少女レイ"},
+  {cd:"少年よ我に帰れ", label:"少年よ我に帰れ"},
+  {cd:"シル・ヴ・プレジデント", label:"シル・ヴ・プレジデント"},
+  {cd:"シンデレラ", label:"シンデレラ"},
+  {cd:"新宝島", label:"新宝島"},
+  {cd:"好き！雪！本気マジック", label:"好き！雪！本気マジック"},
+  {cd:"StarDust", label:"StarDust"},
+  {cd:"Snowhalation", label:"Snow halation"},
+  {cd:"星間飛行", label:"星間飛行"},
+  {cd:"世界の約束", label:"世界の約束"},
+  {cd:"絶滅黒髪少女", label:"絶滅黒髪少女"},
+  {cd:"千本桜", label:"千本桜"},
+  {cd:"創聖のアクエリオン", label:"創聖のアクエリオン"},
+  {cd:"卒業", label:"卒業"},
+  {cd:"卒業写真", label:"卒業写真"},
+  {cd:"そばかす", label:"そばかす"},
+  {cd:"空色デイズ", label:"空色デイズ"},
+  {cd:"ソラニン", label:"ソラニン"},
+  {cd:"空も飛べるはず", label:"空も飛べるはず"},
+  {cd:"ダイヤモンドクレバス", label:"ダイヤモンドクレバス"},
+  {cd:"太陽曰く燃えよカオス", label:"太陽曰く燃えよカオス"},
+  {cd:"ダダダダ天使", label:"ダダダダ天使"},
+  {cd:"磔刑の聖女", label:"磔刑の聖女"},
+  {cd:"タッチ", label:"タッチ"},
+  {cd:"脱法ロック", label:"脱法ロック"},
+  {cd:"たばこ", label:"たばこ"},
+  {cd:"魂のルフラン", label:"魂のルフラン"},
+  {cd:"ダーリンダンス", label:"ダーリンダンス"},
+  {cd:"小さな恋のうた", label:"小さな恋のうた"},
+  {cd:"地上の星", label:"地上の星"},
+  {cd:"CHE.R.RY", label:"CHE.R.RY"},
+  {cd:"チェリー", label:"チェリー"},
+  {cd:"チカっとチカ千花っ♡", label:"チカっとチカ千花っ♡"},
+  {cd:"ChaiMaxx", label:"Chai Maxx"},
+  {cd:"チョコレイト・ディスコ", label:"チョコレイト・ディスコ"},
+  {cd:"月のワルツ", label:"月のワルツ"},
+  {cd:"帝国少女", label:"帝国少女"},
+  {cd:"テレキャスタービーボーイ", label:"テレキャスタービーボーイ"},
+  {cd:"tothebeginning", label:"to the beginning"},
+  {cd:"童話迷宮", label:"童話迷宮"},
+  {cd:"となりのトトロ", label:"となりのトトロ"},
+  {cd:"トライアングラー", label:"トライアングラー"},
+  {cd:"ドラマツルギー", label:"ドラマツルギー"},
+  {cd:"Don'tsaylazy", label:"Don't say \"lazy\""},
+  {cd:"なごり雪", label:"なごり雪"},
+  {cd:"夏待ち", label:"夏待ち"},
+  {cd:"なにやってもうまくいかない", label:"なにやってもうまくいかない"},
+  {cd:"奈落の花", label:"奈落の花"},
+  {cd:"ノーザンクロス", label:"ノーザンクロス"},
+  {cd:"白日", label:"白日"},
+  {cd:"花に亡霊", label:"花に亡霊"},
+  {cd:"花の唄", label:"花の唄"},
+  {cd:"花は桜君は美し", label:"花は桜 君は美し"},
+  {cd:"はなまるぴっぴはよいこだけ", label:"はなまるぴっぴはよいこだけ"},
+  {cd:"パラサイト", label:"パラサイト"},
+  {cd:"バラライカ", label:"バラライカ"},
+  {cd:"春一番", label:"春一番"},
+  {cd:"ハルジオン", label:"ハルジオン"},
+  {cd:"春の歌", label:"春の歌"},
+  {cd:"春擬き", label:"春擬き"},
+  {cd:"春よ、来い", label:"春よ、来い"},
+  {cd:"ハレ晴レユカイ", label:"ハレ晴レユカイ"},
+  {cd:"ひこうき雲", label:"ひこうき雲"},
+  {cd:"ヒバナ", label:"ヒバナ"},
+  {cd:"BeautifulWorld", label:"Beautiful World"},
+  {cd:"ファンサ", label:"ファンサ"},
+  {cd:"フォニイ", label:"フォニイ"},
+  {cd:"フクロウさん", label:"フクロウさん"},
+  {cd:"プラチナ", label:"プラチナ"},
+  {cd:"ブルーバード", label:"ブルーバード"},
+  {cd:"flos", label:"flos"},
+  {cd:"promise", label:"promise"},
+  {cd:"プロトディスコ", label:"プロトディスコ"},
+  {cd:"プレイバックPart2", label:"プレイバック Part 2"},
+  {cd:"フレンズ", label:"フレンズ"},
+  {cd:"ふわふわ時間", label:"ふわふわ時間"},
+  {cd:"ベノム", label:"ベノム"},
+  {cd:"ヘミソフィア", label:"ヘミソフィア"},
+  {cd:"冒険でしょでしょ", label:"冒険でしょでしょ"},
+  {cd:"星屑の砂時計", label:"星屑の砂時計"},
+  {cd:"ボッカデラベリタ", label:"ボッカデラベリタ"},
+  {cd:"ホワイトハッピー", label:"ホワイトハッピー"},
+  {cd:"Magia", label:"Magia"},
+  {cd:"マトリョシカ", label:"マトリョシカ"},
+  {cd:"丸の内サディスティック", label:"丸の内サディスティック"},
+  {cd:"みずいろの雨", label:"みずいろの雨"},
+  {cd:"ミュージック・アワー", label:"ミュージック・アワー"},
+  {cd:"Mela!", label:"Mela!"},
+  {cd:"メリッサ", label:"メリッサ"},
+  {cd:"メンヘラじゃないもん！", label:"メンヘラじゃないもん！"},
+  {cd:"妄想感傷代償連盟", label:"妄想感傷代償連盟"},
+  {cd:"妄想税", label:"妄想税"},
+  {cd:"もってけ！セーラーふく", label:"もってけ！セーラーふく"},
+  {cd:"木綿のハンカチーフ", label:"木綿のハンカチーフ"},
+  {cd:"桃色片思い", label:"桃色片思い"},
+  {cd:"優しい彗星", label:"優しい彗星"},
+  {cd:"やさしさに包まれたなら", label:"やさしさに包まれたなら"},
+  {cd:"勇侠青春謳", label:"勇侠青春謳"},
+  {cd:"UFO", label:"UFO"},
+  {cd:"雪の華", label:"雪の華"},
+  {cd:"UNION", label:"UNION"},
+  {cd:"夢をかなえてドラえもん", label:"夢をかなえてドラえもん"},
+  {cd:"夜に駆ける", label:"夜に駆ける"},
+  {cd:"ライオン", label:"ライオン"},
+  {cd:"ラブカ？", label:"ラブカ？"},
+  {cd:"ラフ・メイカー", label:"ラフ・メイカー"},
+  {cd:"ラブリー少女", label:"ラブリー少女"},
+  {cd:"ラムのラブソング", label:"ラムのラブソング"},
+  {cd:"Listen!!", label:"Listen!!"},
+  {cd:"リライト", label:"リライト"},
+  {cd:"ルージュの伝言", label:"ルージュの伝言"},
+  {cd:"ルマ", label:"ルマ"},
+  {cd:"恋愛裁判", label:"恋愛裁判"},
+  {cd:"レディメイド", label:"レディメイド"},
+  {cd:"恋愛サーキュレーション", label:"恋愛サーキュレーション"},
+  {cd:"Rollingstar", label:"Rolling star"},
+  {cd:"ロキ", label:"ロキ"},
+  {cd:"ロビンソン", label:"ロビンソン"},
+  {cd:"ロマンスの神様", label:"ロマンスの神様"},
+  {cd:"忘れな月夜", label:"忘れな月夜"},
+  {cd:"ワルキューレがとまらない", label:"ワルキューレがとまらない"},
+  {cd:"『んっあっあっ。』", label:"『んっあっあっ。』"}
+ ];
+
+ SelectboxSong.forEach(function(value){
+  var op = document.createElement("option");
+  op.value = value.cd;
+  op.text = value.label;
+  category2.appendChild(op);
+ });
+}
+
+function ChangeSelectboxASMR() {
+
+ category2.textContent = null;
+
+ var SelectboxASMR = [
+  {cd:"non", label:"選択なし"},
+  {cd:"飴", label:"飴"},
+  {cd:"オイルマッサージ", label:"オイルマッサージ"},
+  {cd:"オノマトペ", label:"オノマトペ"},
+  {cd:"音叉", label:"音叉"},
+  {cd:"ガラガラ", label:"ガラガラ"},
+  {cd:"雑談", label:"雑談"},
+  {cd:"ジェル", label:"ジェル"},
+  {cd:"ジェルボール", label:"ジェルボール"},
+  {cd:"シチュエーション", label:"シチュエーション"},
+  {cd:"シャンプー", label:"シャンプー"},
+  {cd:"心音", label:"心音"},
+  {cd:"添い寝", label:"添い寝"},
+  {cd:"タオル", label:"タオル"},
+  {cd:"手袋", label:"手袋"},
+  {cd:"吐息", label:"吐息"},
+  {cd:"歯磨き", label:"歯磨き"},
+  {cd:"ベビーパウダー", label:"ベビーパウダー"},
+  {cd:"ブラシ", label:"ブラシ"},
+  {cd:"耳かき", label:"耳かき"},
+  {cd:"耳はむ", label:"耳はむ"},
+  {cd:"耳舐め", label:"耳舐め"},
+  {cd:"リップ音", label:"リップ音"}
+ ];
+
+ SelectboxASMR.forEach(function(value){
+  var op = document.createElement("option");
+  op.value = value.cd;
+  op.text = value.label;
+  category2.appendChild(op);
+ });
+}
+
+function ChangeSelectboxGame() {
+
+ category2.textContent = null;
+
+ var SelectboxGame = [
+  {cd:"non", label:"選択なし"},
+  {cd:"Ib", label:"Ib"},
+  {cd:"写るんです", label:"写るんです"},
+  {cd:"帰り道", label:"帰り道"},
+  {cd:"恐怖の森", label:"恐怖の森"},
+  {cd:"深夜放送", label:"深夜放送"},
+  {cd:"ずつう", label:"ずつう"},
+  {cd:"どこでもキャッチャー", label:"どこでもキャッチャー"},
+  {cd:"NGO", label:"NEEDY GIRL OVERDOSE"},
+  {cd:"閉店事件", label:"閉店事件"},
+  {cd:"マイクラ", label:"マイクラ"},
+  {cd:"マリオカート", label:"マリオカート"},
+  {cd:"RFA", label:"RFA"}
+ ];
+
+ SelectboxGame.forEach(function(value){
+  var op = document.createElement("option");
+  op.value = value.cd;
+  op.text = value.label;
+  category2.appendChild(op);
+ });
+}
+
+ //セレクトボックス(2)動作
+function changeCategory2() {
+ var tagname;
+ var CSElements = document.getElementsByClassName(category.value);
+ var CSElementsLen = CSElements.length;
+ var changedCategory2 = category2.value;
+
+ for(var i = 0; i < CSElementsLen ; i++){
+  tagname = CSElements[i];
+  if(changedCategory2 == "non"){
+   tagname.style.display = '';
+  } else {
+   if(tagname.classList.contains(changedCategory2) == true){
+    tagname.style.display = '';
+   } else {
+    tagname.style.display = 'none';
+   }
+  }
+ }
+ if (checkboxA.checked == true){
+  favcheck();
+ }
+
+}
+
+ //お気に入り動作
+function favdisplay(){
+
+ if (checkboxA.checked == true){
+  favcheck();
+ } else if (checkboxA.checked == false ){
+  if (category2.value == "non" || category2.selectedIndex == 0){
+   linehidden();
+  } else {
+   changeCategory2();
+  }
+ }
+
+}
+
+
+//お気に入りチェック
+function favcheck(){
+
+ for (var i = 0; i < CECounts; i++){
+  FavElements = CheckboxElements[i];
+  Favid = FavElements.getAttribute("id");
+  FavLoad = JSON.parse(localStorage.getItem(Favid));
+  if (FavLoad !== true) {
+   document.getElementById("B"+Favid).style.display="none";
+  }
+ }
+}
+
+ //チェックボックス保存
+function fav(){
+ for (var i = 0; i< CECounts; i++){
+  FavElements = CheckboxElements[i];
+  Favid = FavElements.getAttribute("id");
+  if (FavElements.checked == true){
+   localStorage.setItem(Favid, JSON.stringify(true));
+  } else {
+   localStorage.setItem(Favid, JSON.stringify(false));
+  }
+ }
+}
+
+ //チェックボックス解除
+function favremove(){
+ var favremovecofirm = confirm("お気に入り削除しますか");
+ if (favremovecofirm){
+  for (var i = 0; i< CECounts; i++){
+   FavElements = CheckboxElements[i];
+   Favid = FavElements.getAttribute("id");
+   if (FavElements.checked == true){
+    FavElements.checked = false;
+    localStorage.setItem(Favid, JSON.stringify(false));
+   } else {
+    localStorage.setItem(Favid, JSON.stringify(false));
+   }
+  }
+  if (category2.value == "non" || category2.selectedIndex == 0){
+   linehidden();
+  } else {
+   changeCategory2();
+  }
+  checkboxA.checked = false;
+ }
+}
+
+//曲検索用
+function songsearch(){
+
+ var SingElements = document.getElementsByClassName("sing");
+ var SongsearchElements = document.getElementsByClassName("songsearch");
+ var SongCounts = SongsearchElements.length;
+ var SearcBoxElement = document.getElementById("search");
+ var SongSearch;
+
+ category2.selectedIndex = 0;
+ if(SearcBoxElement.value != "" || SearcBoxElement.value != null){
+  for (var i=0; i<SongCounts; i++){
+   if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == -1){
+    SingElements[i].style.display = "none";
+   } else {
+    SingElements[i].style.display = "";
+   }
+  }
+ } else {
+  if (category2.value == "non" || category2.selectedIndex == 0){
+   linehidden();
+  } else {
+   changeCategory2();
+  }
+  checkboxA.checked = false;
+ }
+}
+
+
+//行調整用
+function linehidden(){
+
+ var genresort;
+ var SingBElements = document.getElementsByClassName("singB");
+ var SingBAmounts = SingBElements.length;
+ var singsort;
+
+ category2.selectedIndex=0;
+
+ for(var i = 0; i < AECounts ; i++){
+  genresort = AmountElements[i];
+
+  if(category.value == "non" || category.selectedIndex == 0){
+   genresort.style.display = '';
+  } else {
+   if(genresort.classList.contains(category.value) == true){
+    genresort.style.display = '';
+   } else {
+    genresort.style.display = 'none';
+   }
+  }
+ }
+ if(category.value == "non" || category.selectedIndex == 0){
+  for (var i = 0; i < SingBAmounts; i++){
+   singsort = SingBElements[i];
+   singsort.style.display = 'none';
+  }
+ }
+}
+
+//列調整用
+function categorynon(){
+
+ document.getElementById("radio1").checked = true
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "none";
+  document.getElementById("radio1").style.display = "none";
+  document.getElementById("radio2").style.display = "none";
+
+
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = '';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ }else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ }
+}
+
+function categorysong(){
+
+ document.getElementById("radio1").checked = true
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
+  userList.sort('songtitle', { order: 'asc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementById("radio1").style.display = "";
+  document.getElementById("radiotitle1").insertAdjacentHTML("beforeend", '<span id="radioname1">曲名順</span>');
+  document.getElementById("radio2").style.display = "";
+  document.getElementById("radiotitle2").insertAdjacentHTML("beforeend", '<span id="radioname2">配信日順</span>');
+
+
+
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = '';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ } else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = '';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categoryasmr(){
+
+ document.getElementById("radio1").checked = true
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementById("radio1").style.display = "none";
+  document.getElementById("radio2").style.display = "none";
+
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = '';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ }else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = '';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categorygame(){
+
+ document.getElementById("radio1").checked = true
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
+  userList.sort('gametitle', { order: 'desc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementById("radio1").style.display = "none";
+  document.getElementById("radio2").style.display = "none";
+
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = '';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ }else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = '';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categoryother(){
+
+ document.getElementById("radio1").checked = true
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "none";
+  document.getElementById("radio1").style.display = "none";
+  document.getElementById("radio2").style.display = "none";
+
+ for (var i = 0; i < ColumnCounts ; i++){
+  document.getElementsByClassName('A1')[i].style.display = 'none';
+  document.getElementsByClassName('A2')[i].style.display = 'none';
+  document.getElementsByClassName('A3')[i].style.display = 'none';
+  document.getElementsByClassName('A4')[i].style.display = 'none';
+  document.getElementsByClassName('A5')[i].style.display = '';
+ }
+}
+
+ </script>
+
+<!--<script src="{% static 'js/script.js' %}"></script>-->
+</body>
+</html>
