@@ -589,8 +589,8 @@ function reset(){
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
   category.selectedIndex = 0;
+  var op = document.createElement("option");
   for(i=0;i<singerlist.length;i++){
-    var op = document.createElement("option");
     op.value = singerlist[i].cd;
     op.text = singerlist[i].label;
     op.class = singerlist[i].class;
@@ -607,8 +607,8 @@ function ChangeSelectboxSing() {
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
   category2.selectedIndex = 0;
+  var op = document.createElement("option");
   for(i=0;i<singerlist.length;i++){
-    var op = document.createElement("option");
     op.value = songlist[i].cd;
     op.text = songlist[i].label;
     op.class = songlist[i].class;
