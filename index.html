@@ -36,8 +36,8 @@
     </select>
    </div>
 
-    <div style="display: inline-block; _display: inline;" id="category-second-title">
-     <select name="category-second" id="category-second"><span id="strcolor3">　曲名</span>
+    <div style="display: inline-block; _display: inline;" id="category-second-title"><span id="strcolor3">　曲名</span>
+     <select name="category-second" id="category-second">
       <option value="">選択してください</option>
      </select>　<button id="reset" onclick="reset()">選択解除</button>
     </div>
@@ -464,6 +464,8 @@
  var FavLoad;
  var Favid;
  var checkboxA = document.getElementById("checkboxA");
+ var category = document.getElementById("category");
+ var category2 = document.getElementById("category-second");
 
  window.onload = function(){
 
@@ -482,10 +484,9 @@
  ChangeSelectboxSong();
 
  //セレクトボックス変更時動作
- category = document.getElementById("category");
- category.onchange = changeCategory;
- category2 = document.getElementById("category-second");
- category2.onchange = changeCategory2;
+
+ category.onchange = changeCategory();
+ category2.onchange = changeCategory2();
 
  //列調整
   if (window.matchMedia && window.matchMedia('(max-device-width: 480px)').matches) {
