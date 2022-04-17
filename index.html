@@ -377,7 +377,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
  <script>
   var options = {
-    valueNames: ['genre', 'songtitle', 'tag', 'gametitle', 'date',]
+    valueNames: ['songtitle', 'singer', 'tag', 'gametitle', 'date',]
   };
 
   var userList = new List('users', options);
@@ -588,6 +588,7 @@ function reset(){
 
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
+  category1.textContent = null;
   singerlist.forEach(function(value){
     var op = document.createElement("option");
     op.value = value.cd;
@@ -605,6 +606,7 @@ function ChangeSelectboxSing() {
 
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
+  category2.textContent = null;
   songlist.forEach(function(value){
     var op = document.createElement("option");
     op.value = value.cd;
