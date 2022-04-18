@@ -541,7 +541,7 @@ function changeCategory2() {
       } else {
         tagname2.style.display = "none";
       }
-    } 
+    }
   }
   if (checkboxA.checked == true){
     favcheck();
@@ -577,8 +577,8 @@ function reset(){
 
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
-  var op = document.createElement("option");
   for(i=0;i<singerlist.length;i++){
+    var op = document.createElement("option");
     op.value = singerlist[i].cd;
     op.text = singerlist[i].label;
     category.appendChild(op);
@@ -587,8 +587,8 @@ function ChangeSelectboxSing() {
 
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
-  var op = document.createElement("option");
-  for(i=0;i<singerlist.length;i++){
+  for(i=0;i<songlist.length;i++){
+    var op = document.createElement("option");
     op.value = songlist[i].cd;
     op.text = songlist[i].label;
     if (category.selectedIndex == 0){
