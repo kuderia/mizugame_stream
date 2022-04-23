@@ -1,112 +1,121 @@
- body {
- font-size: small;
- width: 100%;
+body {
+font-size: small;
+width: 100%;
+margin:0;
+padding:0;
+background-color: #ff69b4;
+}
+
+div.fav{
  margin:0;
  padding:0;
- background-color: #ff69b4;
- }
-
- div.fav{
-  margin:0;
-  padding:0;
-  background-image:url('/image.jpg');
-  background-position:center center;
-  background-size:100% auto;
-  background-repeat: no-repeat;
-  opacity:0.8;
- }
+ background-image:url('/image.jpg');
+ background-position:center center;
+ background-size:100% auto;
+ background-repeat: no-repeat;
+ opacity:0.8;
+}
 
 
 h1#strcolor1{
- font-family:"Yu Gothic";
- margin:0;
- padding:0;
- color: #e0218a;
- -webkit-text-stroke: 0.5px #fff;
+font-family:"Yu Gothic";
+margin:0;
+padding:0;
+color: #e0218a;
+-webkit-text-stroke: 0.5px #fff;
 }
 
 .strcolor2{
- font-weight:bolder;
-  font-size: medium;
- color: #000000;
- -webkit-text-stroke: 0.6px #e0218a;
+font-weight:bolder;
+ font-size: medium;
+color: #000000;
+-webkit-text-stroke: 0.6px #e0218a;
+}
+
+
+#category-title{
+vertical-align: -8px
+}
+
+#category-second-title{
+vertical-align: -8px;
 }
 
 select#category{
-  width: 100px;
+ width: 100px;
 }
 
 select#category-second{
-  width: 100px;
+ width: 100px;
 }
 
 div#div1{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
+ font-weight:bolder;
+font-size: medium;
+color: 000;
+-webkit-text-stroke: 0.6px #e0218a;
 
 }
 
 span#radioname1{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
+ font-weight:bolder;
+font-size: medium;
+color: 000;
+-webkit-text-stroke: 0.6px #e0218a;
 
 }
 
 span#radioname2{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
+ font-weight:bolder;
+font-size: medium;
+color: 000;
+-webkit-text-stroke: 0.6px #e0218a;
 
 }
 
 
 div#users{
- font-family:"Yu Gothic";
- background-color: #FFEEFF;
- margin:0;
- padding:0;
+font-family:"Yu Gothic";
+background-color: #FFEEFF;
+margin:0;
+padding:0;
 }
 
 
 table {
-    table-layout: fixed;
-    width: 100%;
+   table-layout: fixed;
+   width: 100%;
 }
 
 th,td {
-    background-color: #FFEEFF;
-    border: solid 1px;   /* 枠線指定 */
+   background-color: #FFEEFF;
+   border: solid 1px;   /* 枠線指定 */
 }
 
 .checkbox{
-   background-color: #FFEEFF;
-   border: 0px none;
+  background-color: #FFEEFF;
+  border: 0px none;
 }
 
 /*checkbox*/
 th.A0{
-  width:15px;
+ width:15px;
 }
 
 /*曲名*/
 th.A1 {
-  width: 200px;
+ width: 200px;
 }
 
 /*歌手名*/
 th.A2{
-  width: 160px;
+ width: 160px;
 }
 
 
 /*配信日*/
 th.A3 {
-   width: 75px;
+  width: 75px;
 }
 
 /*配信タイトル*/
@@ -117,31 +126,31 @@ th.A4 {
 
 /*カウント*/
 th.A5 {
-   width: 15px;
+  width: 15px;
 }
 
 
 
 label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+   display: block;
+   font: 1rem 'Fira Sans', sans-serif;
 }
 
 
 button.btn{
- text-align: left;
- width: 100%;
- border: none;
- background-color: #cdefff;
+text-align: left;
+width: 100%;
+border: none;
+background-color: #cdefff;
 }
 
 .title{
-  overflow:hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+ overflow:hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
 }
 
 input,
 label {
-    margin: .4rem 0;
+   margin: .4rem 0;
 }
