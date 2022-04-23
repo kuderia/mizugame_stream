@@ -41,6 +41,10 @@ vertical-align: -8px
 vertical-align: -8px;
 }
 
+#search{
+  width: 100px;
+}
+
 select#category{
  width: 100px;
 }
