@@ -21,15 +21,15 @@ h1#strcolor1{
 font-family:"Yu Gothic";
 margin:0;
 padding:0;
-color: #e0218a;
+color: #800000;
 -webkit-text-stroke: 0.5px #fff;
 }
 
 .strcolor2{
 font-weight:bolder;
  font-size: medium;
-color: #000000;
--webkit-text-stroke: 0.6px #e0218a;
+color:#8b0000;
+-webkit-text-stroke: 0.25px #fff;
 }
 
 
