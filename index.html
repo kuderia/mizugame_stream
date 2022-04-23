@@ -23,13 +23,13 @@
 
 
    <div id="category-title"><span class="strcolor2">　歌手名</span>
-    <select name="category" id="category">
+    <select name="category" id="category" onchange="changeCategory()">
      <option hidden>選択してください</option>
     </select>
    </div>
 
     <div style="display: inline-block; _display: inline;" id="category-second-title"><span class="strcolor2">　曲名</span>
-     <select name="category-second" id="category-second">
+     <select name="category-second" id="category-second" onchange="changeCategory2()">
       <option value="">選択してください</option>
      </select>　<button id="reset" onclick="reset()">選択解除</button>
     </div>
@@ -409,7 +409,6 @@
   ];
 
   var songlist = [
-    {cd:"non", label:"選択なし", class:"non"},
     {cd:"BlackCherry", label:"Black Cherry", class:"AcidBlackCherry"},
     {cd:"阿修羅ちゃん", label:"阿修羅ちゃん", class:"Ado"},
     {cd:"ギラギラ", label:"ギラギラ", class:"Ado"},
@@ -473,11 +472,6 @@
  ChangeSelectboxSing();
  ChangeSelectboxSong();
 
- //セレクトボックス変更時動作
-
- category.onchange = changeCategory();
- category2.onchange = changeCategory2();
-
  //列調整
   if (window.matchMedia && window.matchMedia('(max-device-width: 480px)').matches) {
    for (var i = 0; i < ColumnCounts ; i++){
@@ -503,7 +497,13 @@ function changeCategory() {
       }
     }
   }
-  alert(category.value)
+  if (category2.value !== "non" && category2.selectedIndex !== 0){
+    category2.selectedIndex = 0;
+  }
+
+  if (checkboxA.checked == true){
+    favcheck();
+  }
   ChangeSelectboxSong();
 }
 
@@ -513,10 +513,8 @@ function changeCategory2() {
 
   for (var i = 0; i < AECounts ; i++){
     tagname2 = AmountElements[i];
-    if (category.value == "non" || category.selectedIndex == 0){
-      if (category2.value == "non"){
-        tagname2.style.display = "";
-      }
+    if (category2.value == "non"){
+      tagname2.style.display = "";
     } else {
       if (tagname2.classList.contains(category2.value) == true){
         tagname2.style.display = "";
@@ -571,11 +569,20 @@ function ChangeSelectboxSing() {
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
     category2.textContent = null;
+    document.createElement("option").value = "non";
+    document.createElement("option").appendChild(document.createTextNode("選択なし"));
+    category2.appendChild(document.createElement("option"));
   for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
-    op.value = singerlist[i].cd;
-    op.text = singerlist[i].label;
-    category2.appendChild(op);
+    op.value = songlist[i].cd;
+    op.text = songlist[i].label;
+    if (category.value == "non" ) {
+      category2.appendChild(op);
+    } else {
+      if (songlist[i].class == category.value){
+        category2.appendChild(op);
+      }
+    }
   }
 }
 
