@@ -567,6 +567,7 @@ function reset(){
 
 //セレクトボックス１表示内容変更
 function ChangeSelectboxSing() {
+  category.textContent = null;
   for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
     op.value = singerlist[i].cd;
@@ -577,6 +578,7 @@ function ChangeSelectboxSing() {
 
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
+    category2.textContent = null;
   for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
     op.value = singerlist[i].cd;
@@ -668,11 +670,7 @@ function songsearch(){
        }
      }
    } else {
-     if (category2.value == "non" || category2.selectedIndex == 0){
-       changeCategory();
-     } else {
-       changeCategory2();
-     }
+         AmountElements[i].style.display = "";
    }
   checkboxA.checked = false;
 }
