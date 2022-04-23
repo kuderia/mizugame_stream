@@ -470,8 +470,6 @@
  }
 
  //セレクトボックス表示内容変更
- category.selectedIndex=0;
- category2.selectedIndex=0;
  ChangeSelectboxSing();
  ChangeSelectboxSong();
 
@@ -505,13 +503,7 @@ function changeCategory() {
       }
     }
   }
-  if (category2.value !== "non" && category2.selectedIndex !== 0){
-    category2.selectedIndex = 0;
-  }
 
-  if (checkboxA.checked == true){
-    favcheck();
-  }
   ChangeSelectboxSong();
 }
 
