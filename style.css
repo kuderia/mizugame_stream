@@ -3,7 +3,7 @@
  width: 100%;
  margin:0;
  padding:0;
- background-color: #ff69b4; 
+ background-color: #ff69b4;
  }
 
  div.fav{
@@ -13,12 +13,12 @@
   background-position:center center;
   background-size:100% auto;
   background-repeat: no-repeat;
-  opacity:0.8;  
+  opacity:0.8;
  }
- 
+
 
 h1#strcolor1{
- font-family:"Yu Gothic"; 
+ font-family:"Yu Gothic";
  margin:0;
  padding:0;
  color: #e0218a;
@@ -29,7 +29,7 @@ span#strcolor2{
  font-weight:bolder;
   font-size: medium;
  color: #000000;
- -webkit-text-stroke: 0.6px #e0218a;  
+ -webkit-text-stroke: 0.6px #e0218a;
 }
 
 span#strcolor3{
@@ -44,7 +44,7 @@ div#div1{
  font-size: medium;
  color: 000;
  -webkit-text-stroke: 0.6px #e0218a;
- 
+
 }
 
 span#radioname1{
@@ -52,7 +52,7 @@ span#radioname1{
  font-size: medium;
  color: 000;
  -webkit-text-stroke: 0.6px #e0218a;
- 
+
 }
 
 span#radioname2{
@@ -60,7 +60,7 @@ span#radioname2{
  font-size: medium;
  color: 000;
  -webkit-text-stroke: 0.6px #e0218a;
- 
+
 }
 
 
@@ -92,31 +92,31 @@ th.A0{
   width:15px;
 }
 
-/*ジャンル*/
-th.A1 {
-  width: 95px;
-}
-
 /*曲名*/
-th.A2{
+th.A1 {
   width: 200px;
 }
 
-
-/*内容*/
-th.A3 {
-   width: 165px;
-}
-
-/*ゲームタイトル*/
-th.A4 {
-  width: 160px;
+/*歌手名*/
+th.A2{
+  width: 100px;
 }
 
 
 /*配信日*/
-th.A5 {
+th.A3 {
    width: 75px;
+}
+
+/*配信タイトル*/
+th.A4 {
+
+}
+
+
+/*カウント*/
+th.A5 {
+   width: 15px;
 }
 
 
@@ -137,7 +137,7 @@ button.btn{
 .title{
   overflow:hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 input,
