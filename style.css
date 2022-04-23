@@ -32,6 +32,13 @@ h1#strcolor1{
  -webkit-text-stroke: 0.6px #e0218a;
 }
 
+select#category{
+  width: 100px;
+}
+
+select#category-second{
+  width: 100px;
+}
 
 div#div1{
   font-weight:bolder;

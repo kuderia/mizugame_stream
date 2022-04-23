@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <title>夜想といき 配信まとめ</title>
+ <title>魔光リサ 配信まとめ</title>
  <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -17,7 +17,7 @@
 <body>
  <div id="body">
   <div class="fav">
-   <h1 id="strcolor1">夜想といき 配信まとめ</h1>
+   <h1 id="strcolor1">魔光リサ 配信まとめ</h1>
 　 <span class="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
    <button class="remove" id="remove" onclick="favremove()">お気に入り削除</button></br>
 
@@ -409,6 +409,7 @@
   ];
 
   var songlist = [
+    {cd:"non", label:"選択なし", class:"non"},
     {cd:"BlackCherry", label:"Black Cherry", class:"AcidBlackCherry"},
     {cd:"阿修羅ちゃん", label:"阿修羅ちゃん", class:"Ado"},
     {cd:"ギラギラ", label:"ギラギラ", class:"Ado"},
@@ -514,7 +515,11 @@ function changeCategory2() {
   for (var i = 0; i < AECounts ; i++){
     tagname2 = AmountElements[i];
     if (category2.value == "non"){
-      tagname2.style.display = "";
+      if (category.value == "non"){
+        tagname2.style.display = "";
+      } else {
+        changeCategory();
+      }
     } else {
       if (tagname2.classList.contains(category2.value) == true){
         tagname2.style.display = "";
@@ -569,9 +574,7 @@ function ChangeSelectboxSing() {
 //セレクトボックス２表示内容変更
 function ChangeSelectboxSong() {
     category2.textContent = null;
-    document.createElement("option").value = "non";
-    document.createElement("option").appendChild(document.createTextNode("選択なし"));
-    category2.appendChild(document.createElement("option"));
+
   for(i=0;i<singerlist.length;i++){
     var op = document.createElement("option");
     op.value = songlist[i].cd;
@@ -579,8 +582,12 @@ function ChangeSelectboxSong() {
     if (category.value == "non" ) {
       category2.appendChild(op);
     } else {
-      if (songlist[i].class == category.value){
+      if (i == 0){
         category2.appendChild(op);
+      } else{
+        if (songlist[i].class == category.value){
+          category2.appendChild(op);
+        }
       }
     }
   }
