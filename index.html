@@ -60,7 +60,7 @@
    </div>
 
     <div id="search-title">
-      <input type ="search" class="search" id="search" onchange="songsearch()" placeholder="曲名を入力">
+      　<input type ="search" class="search" id="search" onchange="songsearch()" placeholder="曲名を入力">
      　<div style="display: inline-block; _display: inline;" id="radiotitle1"><input type="radio" name="radio" id="radio1" onclick="radiocheck()" checked><span class="strcolor2">曲名順</span></div>
      　<div style="display: inline-block; _display: inline;" id="radiotitle2"><input type="radio" name="radio" id="radio2" onclick="radiocheck()"><span class="strcolor2">歌手順</span></div>
      　<div style="display: inline-block; _display: inline;" id="radiotitle3"><input type="radio" name="radio" id="radio3" onclick="radiocheck()"><span class="strcolor2">配信日順</span></div>
@@ -415,6 +415,7 @@
  var checkboxA = document.getElementById("checkboxA");
  var category = document.getElementById("category");
  var category2 = document.getElementById("category-second");
+ var SearcBoxElement = document.getElementById("search");
 
  window.onload = function(){
 
