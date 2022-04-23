@@ -18,17 +18,17 @@
  <div id="body">
   <div class="fav">
    <h1 id="strcolor1">夜想といき 配信まとめ</h1>
-　 <span id="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
+　 <span class="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
    <button class="remove" id="remove" onclick="favremove()">お気に入り削除</button></br>
 
 
-   <div id="category-title"><span id="strcolor3">　歌手名</span>
+   <div id="category-title"><span class="strcolor2">　歌手名</span>
     <select name="category" id="category">
      <option hidden>選択してください</option>
     </select>
    </div>
 
-    <div style="display: inline-block; _display: inline;" id="category-second-title"><span id="strcolor3">　曲名</span>
+    <div style="display: inline-block; _display: inline;" id="category-second-title"><span class="strcolor2">　曲名</span>
      <select name="category-second" id="category-second">
       <option value="">選択してください</option>
      </select>　<button id="reset" onclick="reset()">選択解除</button>
@@ -36,10 +36,10 @@
 
     <div id="search-title">
      　<input type ="search" class="search" id="search" onchange="songsearch()" placeholder="曲名を入力">
-     　<div style="display: inline-block; _display: inline;" id="radiotitle1"><input type="radio" name="radio" id="radio1" onclick="radiocheck()" checked><span>曲名順</span></div>
-     　<div style="display: inline-block; _display: inline;" id="radiotitle2"><input type="radio" name="radio" id="radio2" onclick="radiocheck()"><span></span>歌手順</div>
-     　<div style="display: inline-block; _display: inline;" id="radiotitle3"><input type="radio" name="radio" id="radio3" onclick="radiocheck()"><span></span>配信日順</div>
-     　<div style="display: inline-block; _display: inline;" id="radiotitle4"><input type="radio" name="radio" id="radio4" onclick="radiocheck()"><span>閲覧数順</span></div>
+     　<div style="display: inline-block; _display: inline;" id="radiotitle1"><input type="radio" name="radio" id="radio1" onclick="radiocheck()" checked><span class="strcolor2">曲名順</span></div>
+     　<div style="display: inline-block; _display: inline;" id="radiotitle2"><input type="radio" name="radio" id="radio2" onclick="radiocheck()"><span class="strcolor2">歌手順</span></div>
+     　<div style="display: inline-block; _display: inline;" id="radiotitle3"><input type="radio" name="radio" id="radio3" onclick="radiocheck()"><span class="strcolor2">配信日順</span></div>
+     　<div style="display: inline-block; _display: inline;" id="radiotitle4"><input type="radio" name="radio" id="radio4" onclick="radiocheck()"><span class="strcolor2">閲覧数順</span></div>
      </div>
   </div>
 

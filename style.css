@@ -25,19 +25,13 @@ h1#strcolor1{
  -webkit-text-stroke: 0.5px #fff;
 }
 
-span#strcolor2{
+.strcolor2{
  font-weight:bolder;
   font-size: medium;
  color: #000000;
  -webkit-text-stroke: 0.6px #e0218a;
 }
 
-span#strcolor3{
-  font-weight:bolder;
- font-size: medium;
- color: #000;
- -webkit-text-stroke: 0.6px #e0218a;
-}
 
 div#div1{
   font-weight:bolder;
@@ -99,7 +93,7 @@ th.A1 {
 
 /*歌手名*/
 th.A2{
-  width: 100px;
+  width: 160px;
 }
 
 
