@@ -3,7 +3,7 @@ font-size: small;
 width: 100%;
 margin:0;
 padding:0;
-background-color: #ff69b4;
+background-color: #8b0000;
 }
 
 div.fav{
@@ -18,7 +18,7 @@ div.fav{
 
 
 h1#strcolor1{
-font-family:"Yu Gothic";
+
 margin:0;
 padding:0;
 color: #800000;
@@ -53,34 +53,10 @@ select#category-second{
  width: 100px;
 }
 
-div#div1{
- font-weight:bolder;
-font-size: medium;
-color: 000;
--webkit-text-stroke: 0.6px #e0218a;
-
-}
-
-span#radioname1{
- font-weight:bolder;
-font-size: medium;
-color: 000;
--webkit-text-stroke: 0.6px #e0218a;
-
-}
-
-span#radioname2{
- font-weight:bolder;
-font-size: medium;
-color: 000;
--webkit-text-stroke: 0.6px #e0218a;
-
-}
-
 
 div#users{
-font-family:"Yu Gothic";
-background-color: #FFEEFF;
+
+background-color: #d89999;
 margin:0;
 padding:0;
 }
@@ -92,12 +68,12 @@ table {
 }
 
 th,td {
-   background-color: #FFEEFF;
+   background-color: #d89999;
    border: solid 1px;   /* 枠線指定 */
 }
 
 .checkbox{
-  background-color: #FFEEFF;
+  background-color: #d89999;
   border: 0px none;
 }
 
@@ -113,7 +89,7 @@ th.A1 {
 
 /*歌手名*/
 th.A2{
- width: 160px;
+ width: 165px;
 }
 
 
@@ -145,7 +121,7 @@ button.btn{
 text-align: left;
 width: 100%;
 border: none;
-background-color: #cdefff;
+background-color: #cb7a82;
 }
 
 .title{

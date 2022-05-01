@@ -3,13 +3,13 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <title>魔光リサ 配信まとめ</title>
+ <title>水瓶ミア　歌まとめ</title>
  <link rel="stylesheet" href="/style.css">
 </head>
 
 <style>
  #users {
-  height:80vh;
+  height:75vh;
   overflow-y: scroll;
  }
 </style>
@@ -17,7 +17,7 @@
 <body>
  <div id="body">
   <div class="fav">
-   <h1 id="strcolor1">魔光リサ 配信まとめ</h1>
+   <h1 id="strcolor1">水瓶ミア　歌まとめ</h1>
 　 <span class="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
    <button class="remove" id="remove" onclick="favremove()">お気に入り削除</button></br>
 
@@ -25,43 +25,109 @@
    <div style="display: inline-block; _display: inline;" id="category-title"><span class="strcolor2">　歌手名</span>
     <select name="category" id="category" onchange="changeCategory()">
       <option value="non">選択なし</option>
-      <option value="AcidBlackCherry">Acid Black Cherry</option>
+      <option value="あいみょん">Acid あいみょん Cherry</option>
       <option value="あたらよ">あたらよ</option>
       <option value="Ado">Ado</option>
-      <option value="亜沙">亜沙</option>
+      <option value="AftertheRain">After the Rain</option>
+      <option value="アリエP">アリエP</option>
+      <option value="杏里">杏里</option>
+      <option value="EasyPop">EasyPop</option>
       <option value="いきものがかり">いきものがかり</option>
-      <option value="Eve">Eve</option>
-      <option value="EGOIST">EGOIST</option>
+      <option value="うたたP">うたたP</option>
+      <option value="ウマ娘プリティーダービー">ウマ娘 プリティーダービー</option>
+      <option value="梅とら">梅とら</option>
+      <option value="EveryLittleThing">Every Little Thing</option>
       <option value="Aimer">Aimer</option>
+      <option value="オーイシマサヨシ">オーイシマサヨシ</option>
       <option value="奥華子">奥華子</option>
+      <option value="尾崎豊">尾崎豊</option>
       <option value="Official髭男dism">Official髭男dism</option>
-      <option value="ClariS">ClariS</option>
+      <option value="かいりきベア">かいりきベア</option>
+      <option value="Kanaria">Kanaria</option>
+      <option value="keeno">keeno</option>
       <option value="Giga">Giga</option>
+      <option value="KizunaAI">Kizuna AI</option>
+      <option value="綺羅星ウタ・獅子神レオナ・丑牡てぃあ">綺羅星ウタ・獅子神レオナ・丑牡てぃあ</option>
+      <option value="Goosehouse">Goose house</option>
+      <option value="ClariS">ClariS</option>
+      <option value="黒うさP">黒うさP</option>
+      <option value="五條真由美">五條真由美</option>
       <option value="コレサワ">コレサワ</option>
-      <option value="島谷ひとみ">島谷ひとみ</option>
-      <option value="SCANDAL">SCANDAL</option>
-      <option value="ハムちゃんず">ハムちゃんず</option>
-      <option value="涼宮ハルヒ(CV.平野綾)">涼宮ハルヒ(CV.平野綾)</option>
-      <option value="DixieFlatline">Dixie Flatline</option>
-      <option value="てにをは">てにをは</option>
+      <option value="坂本真綾">坂本真綾</option>
+      <option value="紗倉ひびき(CV:ファイルーズあい)&街雄鳴造(CV:石川界人)">紗倉ひびき(CV:ファイルーズあい)&街雄鳴造(CV:石川界人)</option>
+      <option value="Junky">Junky</option>
+      <option value="syudou">syudou</option>
+      <option value="じん(自然の敵P)">じん(自然の敵P)</option>
+      <option value="supercell">supercell</option>
+      <option value="スキマスイッチ">スキマスイッチ</option>
+      <option value="ずっと真夜中でいいのに。">ずっと真夜中でいいのに。</option>
+      <option value="すりぃ">すりぃ</option>
+      <option value="DAOKO×米津玄師">DAOKO × 米津玄師</option>
+      <option value="DALI">DALI</option>
+      <option value="CHiCOwithHoneyWorks">CHiCO with HoneyWorks</option>
+      <option value="蝶々P">蝶々P</option>
+      <option value="つじあやの">つじあやの</option>
       <option value="DECO*27">DECO*27</option>
+      <option value="電ポルP">電ポルP</option>
+      <option value="當山みれい">當山みれい</option>
+      <option value="TWICE">TWICE</option>
+      <option value="德永英明">德永英明</option>
       <option value="doriko">doriko</option>
+      <option value="ナナホシ管弦楽団">ナナホシ管弦楽団</option>
+      <option value="ナナヲアカリ">ナナヲアカリ</option>
+      <option value="ナユタン星人">ナユタン星人</option>
+      <option value="におP">におP</option>
       <option value="西沢さんP">西沢さんP</option>
+      <option value="にしな">にしな</option>
+      <option value="西野カナ">西野カナ</option>
+      <option value="NiziU">NiziU</option>
+      <option value="Nem">Nem</option>
+      <option value="のりP">のりP</option>
+      <option value="buzzG">buzzG</option>
+      <option value="ハチ">ハチ</option>
+      <option value="backnumber">back number</option>
+      <option value="花鋏キョウ・双里マイ・ゆにゆにこ">花鋏キョウ・双里マイ・ゆにゆにこ</option>
+      <option value="花鋏キョウ・水瓶ミア">花鋏キョウ・水瓶ミア</option>
+      <option value="ぱなまん×西沢さんP">ぱなまん×西沢さんP</option>
+      <option value="HoneyWorks">HoneyWorks</option>
+      <option value="HoneyWorksfeat.夜のひと笑い">HoneyWorks feat.夜のひと笑い</option>
+      <option value="HoneyWorksmeetsスフィア">HoneyWorks meets スフィア</option>
+      <option value="バルーン">バルーン</option>
+      <option value="ハヤシケイ/KEI">ハヤシケイ/KEI</option>
+      <option value="BTS">BTS</option>
+      <option value="P丸様。">P丸様。</option>
+      <option value="一青窈">一青窈</option>
       <option value="ピノキオピー">ピノキオピー</option>
-      <option value="フィンガー5">フィンガー5</option>
-      <option value="放課後ティータイム">放課後ティータイム</option>
-      <option value="松田聖子">松田聖子</option>
+      <option value="HIMEHINA">HIMEHINA</option>
+      <option value="fripSide">fripSide</option>
+      <option value="星野源">星野源</option>
+      <option value="BOL4">BOL4</option>
+      <option value="mao">mao</option>
+      <option value="松本梨香">松本梨香</option>
+      <option value="MAHO堂">MAHO堂</option>
+      <option value="마마무(MAMAMOO)">마마무(MAMAMOO)</option>
+      <option value="みきとP">みきとP</option>
+      <option value="水瓶ミア">水瓶ミア</option>
+      <option value="Mrs.GREENAPPLE">Mrs. GREEN APPLE</option>
       <option value="μ's">μ's</option>
-      <option value="mona(CV.夏川椎菜)">mona(CV.夏川椎菜)</option>
-      <option value="YUI">YUI</option>
+      <option value="mona(CV：夏川椎菜)">mona(CV：夏川椎菜)</option>
+      <option value="優里">優里</option>
+      <option value="UNISONSQUAREGARDEN">UNISON SQUARE GARDEN</option>
       <option value="YOASOBI">YOASOBI</option>
-      <option value="ヨルシカ">ヨルシカ</option>
-      <option value="40mP">40mP</option>
+      <option value="米津玄師">米津玄師</option>
       <option value="RADWIMPS">RADWIMPS</option>
-      <option value="ランカ・リー(CV.中島愛)">ランカ・リー(CV.中島愛)</option>
+      <option value="Re:AcT1期生">Re:AcT 1期生</option>
+      <option value="Re:AcT1期生・2期生">Re:AcT 1期生・2期生</option>
+      <option value="Re:AcT2期生">Re:AcT 2期生</option>
+      <option value="Re:AprojecT">Re:A projecT</option>
+      <option value="ReAliz">ReAliz</option>
       <option value="LiSA">LiSA</option>
       <option value="ryo">ryo</option>
-      <option value="ONEOKROCK">ONE OK ROCK</option>
+      <option value="LinkedHorizon">Linked Horizon</option>
+      <option value="れるりり">れるりり</option>
+      <option value="和田たけあき(くらげP)">和田たけあき(くらげP)</option>
+      <option value="wacci">wacci</option>
+      <option value="ワルキューレ">ワルキューレ</option>
     </select>
    </div>
 
@@ -94,377 +160,1465 @@
        <tbody class="list">
   <!--歌枠-->
 
-
-        <tr class="len 阿修羅ちゃん Ado" id="B1-1-1">
+        <tr class="len サリシノハラ みきとP" id="B1-1-1">
           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-1"></td>
-          <td class="Ж 阿修羅ちゃん あしゅらちゃん">阿修羅ちゃん</td>
-          <td class="singer A2">Ado</td>
-          <td class="date A3">2022/4/2</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/oL579kjp0g4?t=2m24s', 'blank')">【初配信】Re:AcT所属の天才悪魔、魔光リサです。ども。　#つばぐら</button></td>
+          <td class="Ж サリシノハラ さりしのはら">サリシノハラ</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=6m1s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
         </tr>
 
-        <tr class="len GodKnows... 涼宮ハルヒ(CV.平野綾)" id="B1-2-1">
+        <tr class="len ロキ みきとP" id="B1-1-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-2"></td>
+          <td class="Ж ロキ ろき">ロキ</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=12m16s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len いけないボーダーライン ワルキューレ" id="B1-1-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-3"></td>
+          <td class="Ж いけないボーダーライン いけないぼーだーらいん ">いけないボーダーライン</td>
+          <td class="singer A2">ワルキューレ</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=16m59s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len 僕たちはひとつの光 μ's" id="B1-1-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-4"></td>
+          <td class="Ж 僕たちはひとつの光  ぼくたちはひとつのひかり">僕たちはひとつの光</td>
+          <td class="singer A2">μ's</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=23m38s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len トリセツ 西野カナ" id="B1-1-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-5"></td>
+          <td class="Ж トリセツ とりせつ">トリセツ</td>
+          <td class="singer A2">西野カナ</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=30m44s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len SAKURA いきものがかり" id="B1-1-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-6"></td>
+          <td class="Ж SAKURA さくら">SAKURA</td>
+          <td class="singer A2">いきものがかり</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=38m37s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len glow keeno" id="B1-1-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-7"></td>
+          <td class="Ж glow ぐろう">glow</td>
+          <td class="singer A2">keeno</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=47m37s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len ピエロ ハヤシケイ/KEI" id="B1-1-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1-8"></td>
+          <td class="Ж ピエロ ぴえろ">ピエロ</td>
+          <td class="singer A2">ハヤシケイ/KEI</td>
+          <td class="date A3">2018/10/9</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DRT87iLxK6Q?t=54m38s', 'blank')">【歌配信】ボカロ、J-POP、アニソンたくさん歌うよ〜！！#2【VTuber】</button></td>
+        </tr>
+
+        <tr class="len TimeGoesBy EveryLittleThing" id="B1-2-1">
           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-1"></td>
-          <td class="Ж GodKnows... godknows... ごっどのうず ">God Knows...</td>
-          <td class="singer A2">涼宮ハルヒ(CV.平野綾)</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=9m55s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="Ж TimeGoesBy timegoesby たいむごーずばい">Time Goes By</td>
+          <td class="singer A2">Every Little Thing</td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=50m26s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
         </tr>
 
-        <tr class="len CryBaby Official髭男dism" id="B1-2-2">
+        <tr class="len ハートトゥハート 西沢さんP" id="B1-2-2">
           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-2"></td>
-          <td class="Ж CryBaby crybaby くらいべいびー ">Cry Baby</td>
-          <td class="singer A2">Official髭男dism</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=17m6s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len CH4NGE Giga" id="B1-2-3">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-3"></td>
-          <td class="Ж CH4NGE ちぇんじ ">CH4NGE</td>
-          <td class="singer A2">Giga</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=23m55s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ファンサ mona(CV.夏川椎菜)" id="B1-2-4">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-4"></td>
-          <td class="Ж ファンサ  ふぁんさ ">ファンサ</td>
-          <td class="singer A2">mona(CV.夏川椎菜)</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=28m26s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ヴィラン てにをは" id="B1-2-5">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-5"></td>
-          <td class="Ж ヴィラン ヴぃらん ">ヴィラン</td>
-          <td class="singer A2">てにをは</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=35m7s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 言って。 ヨルシカ" id="B1-2-6">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-6"></td>
-          <td class="Ж 言って。 いって。 ">言って。</td>
-          <td class="singer A2">ヨルシカ</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=41m38s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 神っぽいな ピノキオピー" id="B1-2-7">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-7"></td>
-          <td class="Ж 神っぽいな かみっぽいな ">神っぽいな</td>
-          <td class="singer A2">ピノキオピー</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=49m49s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len なんでもないや RADWIMPS" id="B1-2-8">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-8"></td>
-          <td class="Ж なんでもないや ">なんでもないや</td>
-          <td class="singer A2">RADWIMPS</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=56m50s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len レディメイド Ado" id="B1-2-9">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-9"></td>
-          <td class="Ж レディメイド れでぃめいど ">レディメイド</td>
-          <td class="singer A2">Ado</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=1h5m28s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 吉原ラメント 亜沙" id="B1-2-10">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-10"></td>
-          <td class="Ж 吉原ラメント よしはららめんと ">吉原ラメント</td>
-          <td class="singer A2">亜沙</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=1h12m3s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len Boo! 西沢さんP" id="B1-2-11">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-11"></td>
-          <td class="Ж Boo! boo! ぶー ">Boo!</td>
+          <td class="Ж ハートトゥハート はーととぅはーと">ハートトゥハート</td>
           <td class="singer A2">西沢さんP</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=1h18m44s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=56m47s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
         </tr>
 
-        <tr class="len だから僕は音楽を辞めた ヨルシカ" id="B1-2-12">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-12"></td>
-          <td class="Ж だから僕は音楽を辞めた だからぼくはおんがくをやめた ">だから僕は音楽を辞めた</td>
-          <td class="singer A2">ヨルシカ</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=1h23m23s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len 心拍数♯0822 蝶々P" id="B1-2-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-3"></td>
+          <td class="Ж 心拍数♯0822 しんぱくすうしゃーぷぜろはちにーにー">心拍数♯0822</td>
+          <td class="singer A2">蝶々P</td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=1h1m15s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
         </tr>
 
-        <tr class="len 残響散歌 Aimer" id="B1-2-13">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-13"></td>
-          <td class="Ж 残響散歌 ざんきょうさんか ">残響散歌</td>
-          <td class="singer A2">Aimer</td>
-          <td class="date A3">2022/4/9</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Dkj-BCSiBFQ?t=1h30m2s', 'blank')">【歌枠】初見さんも、来て聞いて！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 瞬間センチメンタル SCANDAL" id="B1-3-1">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-1"></td>
-          <td class="Ж 瞬間センチメンタル しゅんかんせんちめんたる ">瞬間センチメンタル</td>
-          <td class="singer A2">SCANDAL</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=2m58s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 廻廻奇譚 Eve" id="B1-3-2">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-2"></td>
-          <td class="Ж 廻廻奇譚 かいかいきたん ">廻廻奇譚</td>
-          <td class="singer A2">Eve</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=9m4s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ギラギラ Ado" id="B1-3-3">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-3"></td>
-          <td class="Ж ギラギラ ぎらぎら ">ギラギラ</td>
-          <td class="singer A2">Ado</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=15m2s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ただ君に晴れ ヨルシカ" id="B1-3-4">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-4"></td>
-          <td class="Ж ただ君に晴れ ただきみにはれ ">ただ君に晴れ</td>
-          <td class="singer A2">ヨルシカ</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=21m46s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len 初恋の絵本 HoneyWorks" id="B1-2-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-4"></td>
+          <td class="Ж 初恋の絵本 はつこいのえほん">初恋の絵本</td>
+          <td class="singer A2">HoneyWorks</td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=1h7m5s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
           <td class="clickamount" id="sing18" style="display:none"></td>
         </tr>
 
-        <tr class="len 星間飛行 ランカ・リー(CV.中島愛)" id="B1-3-5">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-5"></td>
-          <td class="Ж 星間飛行 せいかんひこう ">星間飛行</td>
-          <td class="singer A2">ランカ・リー(CV.中島愛)</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=27m2s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len ワールド・ランプシェード buzzG" id="B1-2-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-5"></td>
+          <td class="Ж ワールド・ランプシェード わーるどらんぷしぇーど ">ワールド・ランプシェード</td>
+          <td class="singer A2">buzzG</td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=1h11m41s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
         </tr>
 
-        <tr class="len コネクト ClariS" id="B1-3-6">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-6"></td>
-          <td class="Ж コネクト こねくと ">コネクト</td>
-          <td class="singer A2">ClariS</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=32m36s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 変わらないもの 奥華子" id="B1-3-7">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-7"></td>
-          <td class="Ж 変わらないもの かわらないもの ">変わらないもの</td>
-          <td class="singer A2">奥華子</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?38m45s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 完全感覚Dreamer ONEOKROCK" id="B1-3-8">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-8"></td>
-          <td class="Ж 完全感覚Dreamer 完全感覚dreamer かんぜんかんかくどりーまー ">完全感覚Dreamer</br>※1番のみ</td>
-          <td class="singer A2">ONE OK ROCK</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=44m51s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 紅蓮華 LiSA" id="B1-3-9">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-9"></td>
-          <td class="Ж 紅蓮華 ぐれんげ ">紅蓮華</td>
-          <td class="singer A2">LiSA</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=47m32s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len BlackCherry AcidBlackCherry" id="B1-3-10">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-10"></td>
-          <td class="Ж BlackCherry blackcherry ぶらっくちぇりー ">Black Cherry</td>
-          <td class="singer A2">Acid Black Cherry</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h1m3s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len YUME日和 島谷ひとみ" id="B1-3-11">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-11"></td>
-          <td class="Ж YUME日和 yume日和 ゆめびより ">YUME日和</td>
-          <td class="singer A2">島谷ひとみ</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h7m41s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len SWEETMEMORIES 松田聖子" id="B1-3-12">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-12"></td>
-          <td class="Ж SWEETMEMORIES sweetmemories すうぃーとめもりーず ">SWEETME MORIES</td>
-          <td class="singer A2">松田聖子</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h15m9s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 学園天国 フィンガー5" id="B1-3-13">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-13"></td>
-          <td class="Ж 学園天国 がくえんてんごく ">学園天国</td>
-          <td class="singer A2">フィンガー5</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h22m47s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len 僕らは今のなかで μ's" id="B1-3-14">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-14"></td>
-          <td class="Ж 僕らは今のなかで ぼくらはいまのなかで ">僕らは今のなかで</td>
-          <td class="singer A2">μ's</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h27m32s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len Snowhalation μ's" id="B1-3-15">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-15"></td>
-          <td class="Ж Snowhalation snowhalation すのーはれーしょん ">Snow halation</td>
-          <td class="singer A2">μ's</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h34m32s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ブルーバード いきものがかり" id="B1-3-16">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-16"></td>
-          <td class="Ж ブルーバード ぶるーばーど ">ブルーバード</td>
-          <td class="singer A2">いきものがかり</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h40m48s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len カタオモイ Aimer" id="B1-3-17">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-17"></td>
-          <td class="Ж カタオモイ かたおもい ">カタオモイ</td>
-          <td class="singer A2">Aimer</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h46m41s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ふわふわ時間 放課後ティータイム" id="B1-3-18">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-18"></td>
-          <td class="Ж ふわふわ時間 ふわふわたいむ ">ふわふわ時間</td>
-          <td class="singer A2">放課後ティータイム</td>
-          <td class="date A3">2022/4/16</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?t=1h50m21s', 'blank')">【歌枠】アニソン多め♬初見さん歓迎♬ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len again YUI" id="B1-4-1">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-1"></td>
-          <td class="Ж again あげいん">again</td>
-          <td class="singer A2">YUI</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=3m48s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ハム太郎とっとこうた ハムちゃんず" id="B1-4-2">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-2"></td>
-          <td class="Ж ハム太郎とっとこうた はむたろうとっとこうた">ハム太郎とっとこうた</td>
-          <td class="singer A2">ハムちゃんず</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=12m3s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len からくりピエロ 40mP" id="B1-4-3">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-3"></td>
-          <td class="Ж からくりピエロ からくりぴえろ">からくりピエロ</td>
-          <td class="singer A2">40mP</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=15m00s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
-        </tr>
-
-        <tr class="len ロミオとシンデレラ doriko" id="B1-4-4">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-4"></td>
-          <td class="Ж ロミオとシンデレラ ろみおとしんでれら">ロミオとシンデレラ</td>
+        <tr class="len 歌に形はないけれど doriko" id="B1-2-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-2-6"></td>
+          <td class="Ж 歌に形はないけれど うたにかたちはないけれど">歌に形はないけれど</td>
           <td class="singer A2">doriko</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=21m19s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="date A3">2018/10/15</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/CAuaEvK7T38?=1h18m7s', 'blank')">【歌配信】寝れる曲を歌う / おじコラGP発表＆紹介！#3【VTuber】</button></td>
         </tr>
 
-        <tr class="len ワールドイズマイン ryo" id="B1-4-5">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-5"></td>
+        <tr class="len アイネクライネ 米津玄師" id="B1-3-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-1"></td>
+          <td class="Ж アイネクライネ あいねくらいね">アイネクライネ</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=6m1s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len なんでもないや RADWIMPS" id="B1-3-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-2"></td>
+          <td class="Ж なんでもないや">なんでもないや</td>
+          <td class="singer A2">RADWIMPS</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=13m33s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len 恋空予報 電ポルP" id="B1-3-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-3"></td>
+          <td class="Ж 恋空予報 こいぞらよほう">恋空予報</td>
+          <td class="singer A2">電ポルP</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=21m55s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len またねがあれば 當山みれい" id="B1-3-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-4"></td>
+          <td class="Ж またねがあれば">またねがあれば</td>
+          <td class="singer A2">當山みれい</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=29m58s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len 小夜子 みきとP" id="B1-3-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-5"></td>
+          <td class="Ж 小夜子 さよこ">小夜子</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=38m49s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len Tómur におP" id="B1-3-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-6"></td>
+          <td class="Ж Tómur とーみゅ">Tómur</td>
+          <td class="singer A2">におP</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=47m1s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len 再生 におP" id="B1-3-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-7"></td>
+          <td class="Ж 再生 さいせい">再生</td>
+          <td class="singer A2">におP</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=53m12s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len 理想論 におP" id="B1-3-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-8"></td>
+          <td class="Ж 理想論 りそうろん">理想論</td>
+          <td class="singer A2">におP</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=1h0m30s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len メルト ryo" id="B1-3-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-3-9"></td>
+          <td class="Ж メルト めると">メルト</td>
+          <td class="singer A2">ryo</td>
+          <td class="date A3">2018/11/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qvuw9yafXKs?t=1h6m39s', 'blank')">【歌配信】睡眠導入にまったりお歌、いかがですか？♪【ゆったりめ・作業BGM向け】</button></td>
+        </tr>
+
+        <tr class="len スキキライ HoneyWorks" id="B1-4-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-1"></td>
+          <td class="Ж スキキライ すききらい">スキキライ</td>
+          <td class="singer A2">HoneyWorks</td>
+          <td class="date A3">2018/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/BVzuu2cKQVA?t=40m37s', 'blank')">【レオ×ミア】雑談メインでたまに歌うよ～！ / VTuber【ゲリラコラボ配信！】</button></td>
+        </tr>
+
+        <tr class="len いけないボーダーライン ワルキューレ" id="B1-4-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-2"></td>
+          <td class="Ж いけないボーダーライン いけないぼーだーらいん">いけないボーダーライン</td>
+          <td class="singer A2">ワルキューレ</td>
+          <td class="date A3">2018/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/BVzuu2cKQVA?t=57m42s', 'blank')">【レオ×ミア】雑談メインでたまに歌うよ～！ / VTuber【ゲリラコラボ配信！】</button></td>
+        </tr>
+
+        <tr class="len Since-Re:ly～シンシアリー～ Re:AprojecT" id="B1-5-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-1"></td>
+          <td class="Ж Since-Re:ly～シンシアリー～ しんしありー">Since-Re:ly ～シンシアリー～</td>
+          <td class="singer A2">Re:AprojecT</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=5m45s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len 脳裏上のクラッカー ずっと真夜中でいいのに。" id="B1-5-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-2"></td>
+          <td class="Ж 脳裏上のクラッカー のうりうえのくらっかー">脳裏上のクラッカー</td>
+          <td class="singer A2">ずっと真夜中でいいのに。</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=12m14s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len ムーンライト。 水瓶ミア" id="B1-5-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-3"></td>
+          <td class="Ж ムーンライト。 むーんらいと">ムーンライト。</td>
+          <td class="singer A2">水瓶ミア</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=23m20s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len ホーンテッド・パーティーナイト Re:AcT2期生" id="B1-5-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-4"></td>
+          <td class="Ж ホーンテッド・パーティーナイト ほーんてっどぱーてぃーないと">ホーンテッド・パーティーナイト</td>
+          <td class="singer A2">Re:AcT 2期生</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=31m25s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len シグナル 綺羅星ウタ・獅子神レオナ・丑牡てぃあ" id="B1-5-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-5"></td>
+          <td class="Ж シグナル しぐなる">シグナル</td>
+          <td class="singer A2">綺羅星ウタ・獅子神レオナ・丑牡てぃあ</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=38m42s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len 風になれ恋心 花鋏キョウ・水瓶ミア" id="B1-5-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-6"></td>
+          <td class="Ж 風になれ恋心 かぜになれこいごころ">風になれ恋心</td>
+          <td class="singer A2">花鋏キョウ・水瓶ミア</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=44m44s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len Since-Re:ly～シンシアリー～ Re:AprojecT" id="B1-5-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-7"></td>
+          <td class="Ж Since-Re:ly～シンシアリー～ しんしありー">Since-Re:ly ～シンシアリー～</td>
+          <td class="singer A2">Re:AprojecT</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=51m25s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len 星月夜。 水瓶ミア" id="B1-5-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-8"></td>
+          <td class="Ж 星月夜。 ほしづきよ">星月夜。</td>
+          <td class="singer A2">水瓶ミア</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=1h5m15s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len KAGAYAKISTARS!! Re:AcT1期生" id="B1-5-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-5-9"></td>
+          <td class="Ж KAGAYAKISTARS!! kagayakistars!! かがやきすたーず">KAGAYAKI STARS!!</td>
+          <td class="singer A2">Re:AcT 1期生</td>
+          <td class="date A3">2019/5/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/DzHUu7Pl4mM?t=1h18m54s', 'blank')">【VTuber】久しぶりのおうた配信！！【LIVE】</button></td>
+        </tr>
+
+        <tr class="len 宿命 Official髭男dism" id="B1-6-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-1"></td>
+          <td class="Ж 宿命 しゅくめい">宿命</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=2m44s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len カタオモイ Aimer" id="B1-6-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-2"></td>
+          <td class="Ж カタオモイ かたおもい">カタオモイ</td>
+          <td class="singer A2">Aimer</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=16m44s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len イエスタデイ Official髭男dism" id="B1-6-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-3"></td>
+          <td class="Ж イエスタデイ いえすたでい">イエスタデイ</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=21m33s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len コネクト ClariS" id="B1-6-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-4"></td>
+          <td class="Ж コネクト こねくと">コネクト</td>
+          <td class="singer A2">ClariS</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=41m37s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len ReAct 黒うさP" id="B1-6-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-5"></td>
+          <td class="Ж ReAct react りあくと">ReAct</td>
+          <td class="singer A2">黒うさP</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=46m25s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len 右肩の蝶 のりP" id="B1-6-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-6"></td>
+          <td class="Ж 右肩の蝶 みぎかたのちょう">右肩の蝶</td>
+          <td class="singer A2">のりP</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=51m25s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len ワールドイズマイン ryo" id="B1-6-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-7"></td>
           <td class="Ж ワールドイズマイン わーるどいずまいん">ワールドイズマイン</td>
           <td class="singer A2">ryo</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=26m45s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=55m57s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
         </tr>
 
-        <tr class="len おじゃま虫 DECO*27" id="B1-4-6">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-6"></td>
-          <td class="Ж おじゃま虫 おじゃまむし">おじゃま虫</td>
-          <td class="singer A2">DECO*27</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=32m42s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len 愛を伝えたいだとか あいみょん" id="B1-6-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-8"></td>
+          <td class="Ж 愛を伝えたいだとか あいをつたえたいだとか">愛を伝えたいだとか</td>
+          <td class="singer A2">あいみょん</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h1m34s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
         </tr>
 
-        <tr class="len 怪物 YOASOBI" id="B1-4-7">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-7"></td>
-          <td class="Ж 怪物 かいぶつ">怪物</td>
+        <tr class="len 別の人の彼女になったよ wacci" id="B1-6-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-9"></td>
+          <td class="Ж 別の人の彼女になったよ べつのひとのかのじょになったよ">別の人の彼女になったよ</td>
+          <td class="singer A2">wacci</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h5m58s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len おねがいダーリン ナナホシ管弦楽団" id="B1-6-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-10"></td>
+          <td class="Ж おねがいダーリン おねがいだーりん">おねがいダーリン</td>
+          <td class="singer A2">ナナホシ管弦楽団</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h13m4s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len パプリカ 米津玄師" id="B1-6-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-11"></td>
+          <td class="Ж パプリカ ぱぷりか">パプリカ</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h17m34s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len ホーンテッド・パーティーナイト Re:AcT2期生" id="B1-6-12">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-12"></td>
+          <td class="Ж ホーンテッド・パーティーナイト ほーんてっどぱーてぃーないと">ホーンテッド・パーティーナイト</td>
+          <td class="singer A2">Re:AcT 2期生</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h29m50s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len 風になれ恋心 花鋏キョウ・水瓶ミア" id="B1-6-13">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-6-13"></td>
+          <td class="Ж 風になれ恋心 かぜになれこいごころ">風になれ恋心</td>
+          <td class="singer A2">花鋏キョウ・水瓶ミア</td>
+          <td class="date A3">2019/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ag2grguMjec?t=1h36m6s', 'blank')">すきな歌をすきなだけうたう配信（いい夫婦の日？知るかァ！！！幸せになれよォ！！！）</button></td>
+        </tr>
+
+        <tr class="len ルマ かいりきベア" id="B1-7-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-1"></td>
+          <td class="Ж ルマ るま">ルマ</td>
+          <td class="singer A2">かいりきベア</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=1m38s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ハルノヒ あいみょん" id="B1-7-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-2"></td>
+          <td class="Ж ハルノヒ はるのひ">ハルノヒ</td>
+          <td class="singer A2">あいみょん</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=7m32s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len SUN 星野源" id="B1-7-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-3"></td>
+          <td class="Ж SUN sun さん">SUN</td>
+          <td class="singer A2">星野源</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=13m39s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 惑星ループ ナユタン星人" id="B1-7-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-4"></td>
+          <td class="Ж 惑星ループ わくせいるーぷ">惑星ループ</td>
+          <td class="singer A2">ナユタン星人</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=26m28s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 紅蓮華 LiSA" id="B1-7-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-5"></td>
+          <td class="Ж 紅蓮華 ぐれんげ">紅蓮華 ※TV size</td>
+          <td class="singer A2">LiSA</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=35m45s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Ibegyou Aimer" id="B1-7-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-6"></td>
+          <td class="Ж Ibegyou ibegyou あいべぐゆー">I beg you</td>
+          <td class="singer A2">Aimer</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=41m29s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len コールボーイ syudou" id="B1-7-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-7"></td>
+          <td class="Ж コールボーイ こーるぼーい">コールボーイ</td>
+          <td class="singer A2">syudou</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=48m5s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len コイワズライ Aimer" id="B1-7-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-8"></td>
+          <td class="Ж コイワズライ こいわずらい">コイワズライ</td>
+          <td class="singer A2">Aimer</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=51m37s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ILOVEYOU 尾崎豊" id="B1-7-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-7-9"></td>
+          <td class="Ж ILOVEYOU iloveyou あいらぶゆー">I LOVE YOU</td>
+          <td class="singer A2">尾崎豊</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/J0fYrTKtNCs?t=59m9s', 'blank')">【VTuber】水瓶ミアLIVE～2020冬バージョン～【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len HappyHalloween Junky" id="B1-8-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-1"></td>
+          <td class="Ж HappyHalloween happyhalloween はっぴーはろうぃん">Happy Halloween</td>
+          <td class="singer A2">Junky</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=5m51s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 炎 LiSA" id="B1-8-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-2"></td>
+          <td class="Ж 炎 ほむら">炎 ※1番のみ</td>
+          <td class="singer A2">LiSA</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=11m24s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 1・2・3 AftertheRain" id="B1-8-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-3"></td>
+          <td class="Ж 1・2・3 わんつーすりー">1・2・3</td>
+          <td class="singer A2">After the Rain</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=14m43s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len たぶん YOASOBI" id="B1-8-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-4"></td>
+          <td class="Ж たぶん">たぶん</td>
           <td class="singer A2">YOASOBI</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=37m57s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=20m44s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len 名前のない怪物 EGOIST" id="B1-4-8">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-8"></td>
-          <td class="Ж 名前のない怪物 なまえのないかいぶつ">名前のない怪物</td>
-          <td class="singer A2">EGOIST</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=42m09s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len ノーダウト Official髭男dism" id="B1-8-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-5"></td>
+          <td class="Ж ノーダウト のーだうと">ノーダウト</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=28m6s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len 10月無口な君を忘れる あたらよ" id="B1-4-9">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-9"></td>
-          <td class="Ж 10月無口な君を忘れる じゅうがつむくちなきみをわすれる">10月無口な君を忘れる</td>
-          <td class="singer A2">あたらよ</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=48m02s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len ILOVE... Official髭男dism" id="B1-8-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-6"></td>
+          <td class="Ж ILOVE... ilove... あいらぶ">I LOVE...</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=31m30s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len たばこ コレサワ" id="B1-4-10">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-10"></td>
+        <tr class="len イエスタデイ Official髭男dism" id="B1-8-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-7"></td>
+          <td class="Ж イエスタデイ いえすたでい">イエスタデイ</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=37m12s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 115万キロのフィルム Official髭男dism" id="B1-8-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-8"></td>
+          <td class="Ж 115万キロのフィルム ひゃくじゅうごまんきろのふぃるむ">115万キロのフィルム</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=42m36s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len KING Kanaria" id="B1-8-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-9"></td>
+          <td class="Ж KING king きんぐ">KING</td>
+          <td class="singer A2">Kanaria</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=49m28s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 可愛くなりたい HoneyWorks" id="B1-8-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-10"></td>
+          <td class="Ж 可愛くなりたい かわいくなりたい">可愛くなりたい</td>
+          <td class="singer A2">HoneyWorks</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=53m37s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 虎視眈々 梅とら" id="B1-8-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-11"></td>
+          <td class="Ж 虎視眈々 こしたんたん">虎視眈々</td>
+          <td class="singer A2">梅とら</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=59m31s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len いーあるふぁんくらぶ みきとP" id="B1-8-12">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-12"></td>
+          <td class="Ж いーあるふぁんくらぶ">いーあるふぁんくらぶ</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=1h8m24s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ヒロイン backnumber" id="B1-8-13">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-13"></td>
+          <td class="Ж ヒロイン ひろいん">ヒロイン</td>
+          <td class="singer A2">back number</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=1h15m7s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len たばこ コレサワ" id="B1-8-14">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-14"></td>
           <td class="Ж たばこ">たばこ</td>
           <td class="singer A2">コレサワ</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=54m43s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=1h24m19s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len JustBeFriends DixieFlatline" id="B1-4-11">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-11"></td>
-          <td class="Ж JustBeFriends justbefriends じゃすとびーふれんず">Just Be Friends</td>
-          <td class="singer A2">Dixie Flatline</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=1h03m20s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len 恋人失格 コレサワ" id="B1-8-15">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-8-15"></td>
+          <td class="Ж 恋人失格 こいびとしっかく">恋人失格</td>
+          <td class="singer A2">コレサワ</td>
+          <td class="date A3">2020/2/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yhvacf8qTDs?t=1h30m58s', 'blank')">【お知らせあり！】歌枠：お菓子くれないと、、、！？【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len CH4NGE Giga" id="B1-4-12">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-12"></td>
-          <td class="Ж CH4NGE ちぇんじ">CH4NGE</td>
-          <td class="singer A2">Giga</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=1h10m2s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+        <tr class="len レイニーブルー 德永英明" id="B1-9-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-1"></td>
+          <td class="Ж レイニーブルー れいにーぶるー">レイニーブルー</td>
+          <td class="singer A2">德永英明</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=7m38s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
         </tr>
 
-        <tr class="len ファンサ mona(CV.夏川椎菜)" id="B1-4-13">
-          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-4-13"></td>
+        <tr class="len そっけない RADWIMPS" id="B1-9-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-2"></td>
+          <td class="Ж そっけない">そっけない</td>
+          <td class="singer A2">RADWIMPS</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=14m33s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len スパークル RADWIMPS" id="B1-9-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-3"></td>
+          <td class="Ж スパークル すぱーくる">スパークル</td>
+          <td class="singer A2">RADWIMPS</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=20m33s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len エメラルドシティ 西沢さんP" id="B1-9-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-4"></td>
+          <td class="Ж エメラルドシティ えめらるどしてぃ">エメラルドシティ</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=28m19s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 星月夜。 水瓶ミア" id="B1-9-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-5"></td>
+          <td class="Ж 星月夜。 ほしづきよ">星月夜。</td>
+          <td class="singer A2">水瓶ミア</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=35m48s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 風になれ恋心 花鋏キョウ・水瓶ミア" id="B1-9-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-6"></td>
+          <td class="Ж 風になれ恋心 かぜになれこいごころ">風になれ恋心</td>
+          <td class="singer A2">花鋏キョウ・水瓶ミア</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=40m59s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len シグナル 綺羅星ウタ・獅子神レオナ・丑牡てぃあ" id="B1-9-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-7"></td>
+          <td class="Ж シグナル しぐなる">シグナル</td>
+          <td class="singer A2">綺羅星ウタ・獅子神レオナ・丑牡てぃあ</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=45m36s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 夢色エール 花鋏キョウ・双里マイ・ゆにゆにこ" id="B1-9-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-8"></td>
+          <td class="Ж 夢色エール ゆめいろえーる">夢色エール</td>
+          <td class="singer A2">花鋏キョウ・双里マイ・ゆにゆにこ</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=50m7s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Since-Re:ly～シンシアリー～ Re:AProject" id="B1-9-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-9"></td>
+          <td class="Ж Since-Re:ly～シンシアリー～ しんしありー">Since-Re:ly ～シンシアリー～</td>
+          <td class="singer A2">Re:A Project</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=55m56s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ホーンテッド・パーティーナイト Re:AcT2期生" id="B1-9-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-10"></td>
+          <td class="Ж ホーンテッド・パーティーナイト ほーんてっどぱーてぃーないと">ホーンテッド・パーティーナイト</td>
+          <td class="singer A2">Re:AcT 2期生</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=1h0m48s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len KAGAYAKISTARS!! Re:AcT1期生" id="B1-9-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-11"></td>
+          <td class="Ж KAGAYAKISTARS!! kagayakistars!! かがやきすたーず">KAGAYAKI STARS!!</td>
+          <td class="singer A2">Re:AcT 1期生</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=1h6m53s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len キミがいる アリエP" id="B1-9-12">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-12"></td>
+          <td class="Ж キミがいる きみがいる">キミがいる</td>
+          <td class="singer A2">アリエP</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=1h14m45s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len イエスタデイ Official髭男dism" id="B1-9-13">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-9-13"></td>
+          <td class="Ж イエスタデイ いえすたでい">イエスタデイ</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/5/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OO4AZzpUxG8?t=1h25m53s', 'blank')">【VTuber】ひさしぶりに歌おっか【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 君じゃなきゃダメみたい オーイシマサヨシ" id="B1-10-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-1"></td>
+          <td class="Ж 君じゃなきゃダメみたい きみじゃなきゃだめみたい">君じゃなきゃダメみたい</td>
+          <td class="singer A2">オーイシマサヨシ</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=8m26s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len うっせぇわ Ado" id="B1-10-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-2"></td>
+          <td class="Ж うっせぇわ">うっせぇわ</td>
+          <td class="singer A2">Ado</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=16m59s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Dynamite BTS" id="B1-10-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-3"></td>
+          <td class="Ж Dynamite  dynamite だいなまいと">Dynamite</td>
+          <td class="singer A2">BTS</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=22m50s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ドライフラワー 優里" id="B1-10-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-4"></td>
+          <td class="Ж ドライフラワー どらいふらわー">ドライフラワー</td>
+          <td class="singer A2">優里</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=27m16s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len プラチナ 坂本真綾" id="B1-10-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-5"></td>
+          <td class="Ж プラチナ ぷらちな">プラチナ</td>
+          <td class="singer A2">坂本真綾</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=33m42s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len こちら、幸福安心委員会です。 うたたP" id="B1-10-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-6"></td>
+          <td class="Ж こちら、幸福安心委員会です。 こちらこうふくあんしんいいんかいです">こちら、幸福安心委員会です。</td>
+          <td class="singer A2">うたたP</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=35m53s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 全力少年 スキマスイッチ" id="B1-10-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-7"></td>
+          <td class="Ж 全力少年 ぜんりょくしょうねん">全力少年</td>
+          <td class="singer A2">スキマスイッチ</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=41m23s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ピースサイン 米津玄師" id="B1-10-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-8"></td>
+          <td class="Ж ピースサイン ぴーすさいん">ピースサイン</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=46m59s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ファンサ mona(CV：夏川椎菜)" id="B1-10-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-9"></td>
           <td class="Ж ファンサ ふぁんさ">ファンサ</td>
-          <td class="singer A2">mona(CV.夏川椎菜)</td>
-          <td class="date A3">2022/4/23</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/SxNi44AY2z0?t=1h13m55s', 'blank')">【ゲリラ歌枠】初見さん歓迎♬登録者３０００人目指して歌います！！ #生リサ 【新人Vtuber/Re:AcT】</button></td>
+          <td class="singer A2">mona(CV：夏川椎菜)</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=52m18s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
         </tr>
+
+        <tr class="len シュガーソングとビターステップ UNISONSQUAREGARDEN" id="B1-10-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-10"></td>
+          <td class="Ж シュガーソングとビターステップ しゅがーそんぐとびたーすてっぷ">シュガーソングとビターステップ</td>
+          <td class="singer A2">UNISON SQUARE GARDEN</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=58m54s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 夜に駆ける YOASOBI" id="B1-10-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-11"></td>
+          <td class="Ж 夜に駆ける よるにかける">夜に駆ける</td>
+          <td class="singer A2">YOASOBI</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h5m23s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len MakeYouHappy NiziU" id="B1-10-12">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-12"></td>
+          <td class="Ж MakeYouHappy makeyouhappy めいくゆーはっぴー">Make You Happy</td>
+          <td class="singer A2">NiziU</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h10m56s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 멋쟁이토마토(おしゃれなトマト)" id="B1-10-13">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-13"></td>
+          <td class="Ж 멋쟁이토마토(おしゃれなトマト) もっちぇんいとまと">멋쟁이 토마토(おしゃれなトマト)</td>
+          <td class="singer A2">-</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h18m16s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len HIP 마마무(MAMAMOO)" id="B1-10-14">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-14"></td>
+          <td class="Ж HIP ひっぷ">HIP</td>
+          <td class="singer A2">마마무(MAMAMOO)</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h23m33s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Dynamite BTS" id="B1-10-15">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-15"></td>
+          <td class="Ж Dynamite  dynamite だいなまいと">Dynamite</td>
+          <td class="singer A2">BTS</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h28m20s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ガーネット 奥華子" id="B1-10-16">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-16"></td>
+          <td class="Ж ガーネット がーねっと">ガーネット</td>
+          <td class="singer A2">奥華子</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h33m45s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len おじゃま虫 DECO*27" id="B1-10-17">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-17"></td>
+          <td class="Ж おじゃま虫 おじゃまむし">おじゃま虫</td>
+          <td class="singer A2">DECO*27</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h41m49s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 風になる つじあやの" id="B1-10-18">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-18"></td>
+          <td class="Ж 風になる かぜになる">風になる</td>
+          <td class="singer A2">つじあやの</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h46m42s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ムーンライト伝説 DALI" id="B1-10-19">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-19"></td>
+          <td class="Ж ムーンライト伝説 むーんらいとでんせつ">ムーンライト伝説</td>
+          <td class="singer A2">DALI</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h53m24s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len DANZEN!ふたりはプリキュア 五條真由美" id="B1-10-20">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-10-20"></td>
+          <td class="Ж DANZEN!ふたりはプリキュア danzen!ふたりはプリキュア だんぜんふたりはぷりきゅあ">DANZEN! ふたりはプリキュア</td>
+          <td class="singer A2">五條真由美</td>
+          <td class="date A3">2021/1/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/QCRM6fZ4FSM?t=1h59m40s', 'blank')">【VTuber】Mia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ハナミズキ 一青窈" id="B1-11-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-1"></td>
+          <td class="Ж ハナミズキ はなみずき">ハナミズキ ※メン限</td>
+          <td class="singer A2">一青窈</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=4m53s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len チュルリラ・チュルリラ・ダッダッダ！ 和田たけあき(くらげP)" id="B1-11-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-2"></td>
+          <td class="Ж チュルリラ・チュルリラ・ダッダッダ！ ちゅるりらちゅるりらだっだっだ">チュルリラ・チュルリラ・ダッダッダ！ ※メン限</td>
+          <td class="singer A2">和田たけあき(くらげP)</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=10m56s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len バレリーコ みきとP" id="B1-11-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-3"></td>
+          <td class="Ж バレリーコ  ばれりーこ">バレリーコ ※メン限</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=15m13s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Booo! 西沢さんP" id="B1-11-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-4"></td>
+          <td class="Ж Booo! booo! ぶー">Booo! ※メン限</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=19m14s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 恋の魔法 ぱなまん×西沢さんP" id="B1-11-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-5"></td>
+          <td class="Ж 恋の魔法 こいのまほう">恋の魔法 ※1番のみ ※メン限</td>
+          <td class="singer A2">ぱなまん×西沢さんP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=24m27s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 神様の云う通り 西沢さんP" id="B1-11-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-6"></td>
+          <td class="Ж 神様の云う通り かみさまのいうとおり">神様の云う通り ※メン限</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=27m26s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 再生 におP" id="B1-11-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-7"></td>
+          <td class="Ж 再生 さいせい">再生 ※メン限</td>
+          <td class="singer A2">におP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=32m3s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 理想論 におP" id="B1-11-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-8"></td>
+          <td class="Ж 理想論 りそうろん">理想論 ※メン限</td>
+          <td class="singer A2">におP</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=38m56s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ブルーバード いきものがかり" id="B1-11-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-9"></td>
+          <td class="Ж ブルーバード ぶるーばーど">ブルーバード ※メン限</td>
+          <td class="singer A2">いきものがかり</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=44m39s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len マトリョシカ(ポケモシカ) ハチ" id="B1-11-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-10"></td>
+          <td class="Ж マトリョシカ(ポケモシカ) まとりょしか(ぽけもしか)">マトリョシカ(ポケモシカ) ※メン限</td>
+          <td class="singer A2">ハチ</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=49m8s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 紅蓮の弓矢 LinkedHorizon" id="B1-11-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-11-11"></td>
+          <td class="Ж 紅蓮の弓矢 ぐれんのゆみや">紅蓮の弓矢 ※1番のみ ※メン限</td>
+          <td class="singer A2">Linked Horizon</td>
+          <td class="date A3">2021/2/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ko1xqEYlagM?t=53m47s', 'blank')">【VTuber】木曜のMia's Music Live！【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len パラボラ Official髭男dism" id="B1-12-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-1"></td>
+          <td class="Ж パラボラ ぱらぼら">パラボラ</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=8m6s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ヘビースモーク にしな" id="B1-12-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-2"></td>
+          <td class="Ж ヘビースモーク へびーすもーく">ヘビースモーク</td>
+          <td class="singer A2">にしな</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=18m9s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 10月無口な君を忘れる あたらよ" id="B1-12-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-3"></td>
+          <td class="Ж 10月無口な君を忘れる  じゅうがつむくちなきみをわすれる">10月無口な君を忘れる</td>
+          <td class="singer A2">あたらよ</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=27m22s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len オリビアを聴きながら 杏里" id="B1-12-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-4"></td>
+          <td class="Ж オリビアを聴きながら おりびあをききながら">オリビアを聴きながら</td>
+          <td class="singer A2">杏里</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=36m27s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ミライチズ HoneyWorksfeat.夜のひと笑い" id="B1-12-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-5"></td>
+          <td class="Ж ミライチズ みらいちず">ミライチズ</td>
+          <td class="singer A2">HoneyWorks feat.夜のひと笑い</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=43m36s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 神っぽいな ピノキオピー" id="B1-12-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-6"></td>
+          <td class="Ж 神っぽいな かみっぽいな">神っぽいな</td>
+          <td class="singer A2">ピノキオピー</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=51m18s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len テレキャスタービーボーイ すりぃ" id="B1-12-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-7"></td>
+          <td class="Ж テレキャスタービーボーイ てれきゃすたーびーぼーい">テレキャスタービーボーイ</td>
+          <td class="singer A2">すりぃ</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=56m35s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len シル・ヴ・プレジデント P丸様。" id="B1-12-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-8"></td>
+          <td class="Ж シル・ヴ・プレジデント しるヴぷれじでんと">シル・ヴ・プレジデント</td>
+          <td class="singer A2">P丸様。</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=1h1m25s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len TT TWICE" id="B1-12-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-9"></td>
+          <td class="Ж TT てぃーてぃー">TT</td>
+          <td class="singer A2">TWICE</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=1h15m13s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len めざせポケモンマスター 松本梨香" id="B1-12-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-10"></td>
+          <td class="Ж めざせポケモンマスター めざせぽけもんますたー">めざせポケモンマスター</td>
+          <td class="singer A2">松本梨香</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=1h20m5s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len onlymyrailgun fripSide" id="B1-12-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-12-11"></td>
+          <td class="Ж onlymyrailgun おんりーまいれーるがん">only my railgun</td>
+          <td class="singer A2">fripSide</td>
+          <td class="date A3">2021/12/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Xr_gRqXMaMo?t=1h29m11s', 'blank')">【VTuber】Mia's Music Live【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len シル・ヴ・プレジデント P丸様。" id="B1-13-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-13-1"></td>
+          <td class="Ж シル・ヴ・プレジデント しるヴぷれじでんと">シル・ヴ・プレジデント</td>
+          <td class="singer A2">P丸様。</td>
+          <td class="date A3">2022/1/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l4Z9xwSS-r0?t=0m40s', 'blank')">【#ReAcT歌リレー】5番手は～～～！？Mia's MusicLive!【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len おジャ魔女カーニバル!! MAHO堂" id="B1-13-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-13-2"></td>
+          <td class="Ж おジャ魔女カーニバル!! おじゃまじょかーにばる">おジャ魔女カーニバル!!</td>
+          <td class="singer A2">MAHO堂</td>
+          <td class="date A3">2022/1/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l4Z9xwSS-r0?t=4m29s', 'blank')">【#ReAcT歌リレー】5番手は～～～！？Mia's MusicLive!【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len パプリカ 米津玄師" id="B1-13-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-13-3"></td>
+          <td class="Ж パプリカ  ぱぷりか">パプリカ</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2022/1/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l4Z9xwSS-r0?t=8m14s', 'blank')">【#ReAcT歌リレー】5番手は～～～！？Mia's MusicLive!【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 夢をかなえてドラえもん mao" id="B1-13-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-13-4"></td>
+          <td class="Ж 夢をかなえてドラえもん ゆめをかなえてどらえもん">夢をかなえてドラえもん</td>
+          <td class="singer A2">mao</td>
+          <td class="date A3">2022/1/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l4Z9xwSS-r0?t=14m14s', 'blank')">【#ReAcT歌リレー】5番手は～～～！？Mia's MusicLive!【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len エメラルドシティ 西沢さんP" id="B1-13-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-13-5"></td>
+          <td class="Ж エメラルドシティ えめらるどしてぃ">エメラルドシティ</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2022/1/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l4Z9xwSS-r0?t=19m36s', 'blank')">【#ReAcT歌リレー】5番手は～～～！？Mia's MusicLive!【水瓶ミア】</button></td>
+        </tr>
+
 
       <!--歌ってみた-->
 
-        <tr class="len 阿修羅ちゃん Ado" id="B2-1">
+        <tr class="len エメラルドシティ 西沢さんP" id="B2-1">
           <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-1"></td>
-          <td class="Ж 阿修羅ちゃん あしゅらちゃん ">阿修羅ちゃん</td>
-          <td class="singer A2">Ado</td>
-          <td class="date A3">2022/4/8</td>
-          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qjz_vP3UcU8', 'blank')">【歌ってみた】阿修羅ちゃん by魔光リサ【新人Vtuber/Re:AcT】</button></td>
+          <td class="Ж エメラルドシティ えめらるどしてぃ ">エメラルドシティ</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2018/9/29</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/w_i0vzngMIo', 'blank')">エメラルドシティ / emerald city - TOKOTOKO(西沢さんP) feat.水瓶ミア【歌ってみた】</button></td>
         </tr>
+
+        <tr class="len いーあるふぁんくらぶ みきとP" id="B2-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-2"></td>
+          <td class="Ж いーあるふぁんくらぶ">いーあるふぁんくらぶ</td>
+          <td class="singer A2">みきとP</td>
+          <td class="date A3">2018/10/27</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/bM_RxY48DUk', 'blank')">【歌って作ってみた】いーあるふぁんくらぶ　short ver.【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len Booo! 西沢さんP" id="B2-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-3"></td>
+          <td class="Ж Booo! booo! ぶー">Booo!</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2018/10/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/A_FSgbyq2bE', 'blank')">【オリジナルMV】Booo! - TOKOTOKO（西沢さんP） feat.水瓶ミア【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len Flamingo 米津玄師" id="B2-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-4"></td>
+          <td class="Ж Flamingo flamingo ふらみんご">Flamingo</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2018/11/4</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/sxDsj1-8xcI', 'blank')">【女性が歌う】Flamingo（米津玄師）/ vo.水瓶ミア / SONY 完全ワイヤレスヘッドホン CMソング【VTuber】</button></td>
+        </tr>
+
+        <tr class="len TEENAGERIOT 米津玄師" id="B2-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-5"></td>
+          <td class="Ж TEENAGERIOT teenageriot てぃーんえいじらいおっと">TEENAGE RIOT</td>
+          <td class="singer A2">米津玄師</td>
+          <td class="date A3">2018/11/6</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/8A1NXt4JyDg', 'blank')">【女性が歌う】TEENAGE RIOT（米津玄師） / vo.水瓶ミア / 『GATSBY COP』CMソング【VTuber】</button></td>
+        </tr>
+
+        <tr class="len ハートトゥハート 西沢さんP" id="B2-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-6"></td>
+          <td class="Ж ハートトゥハート はーととぅはーと">ハートトゥハート</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2018/11/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/3OdNuJasK4s', 'blank')">【歌ってみた】ハートトゥハート / heart to heart - TOKOTOKO（西沢さんP） feat.水瓶ミア</button></td>
+        </tr>
+
+        <tr class="len 劣等上等 Giga" id="B2-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-7"></td>
+          <td class="Ж 劣等上等 れっとうじょうとう">劣等上等</td>
+          <td class="singer A2">Giga</td>
+          <td class="date A3">2018/11/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/ZTQLWq8BYP8', 'blank')">【歌ってみた】劣等上等 Giga / 水瓶ミア×獅子神レオナ【VTuber】</button></td>
+        </tr>
+
+        <tr class="len ビースト・ダンス 和田たけあき(くらげP)" id="B2-8">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-8"></td>
+          <td class="Ж ビースト・ダンス びーすとだんす">ビースト・ダンス</td>
+          <td class="singer A2">和田たけあき(くらげP)</td>
+          <td class="date A3">2018/12/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qMYNR5MycYY', 'blank')">【水瓶ミア】ビースト・ダンス - 和田たけあき(くらげP) / Beast Dance - Kurage【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len 雨とペトラ バルーン" id="B2-9">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-9"></td>
+          <td class="Ж 雨とペトラ あめとぺとら">雨とペトラ</td>
+          <td class="singer A2">バルーン</td>
+          <td class="date A3">2018/12/29</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/v1QrP98m6lo', 'blank')">【VTuber】雨とペトラ / バルーン(covered by 水瓶ミア)</button></td>
+        </tr>
+
+        <tr class="len いけないボーダーライン ワルキューレ" id="B2-10">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-10"></td>
+          <td class="Ж いけないボーダーライン いけないぼーだーらいん">いけないボーダーライン</td>
+          <td class="singer A2">ワルキューレ</td>
+          <td class="date A3">2019/1/18</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/_m6ylUQ9_nQ', 'blank')">【マクロスΔ】いけないボーダーライン / vo.獅子神レオナ & 水瓶ミア【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len カゲロウデイズ じん(自然の敵P)" id="B2-11">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-11"></td>
+          <td class="Ж カゲロウデイズ かげろうでいず">カゲロウデイズ</td>
+          <td class="singer A2">じん(自然の敵P)</td>
+          <td class="date A3">2019/1/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/9uLRCpOwM5E', 'blank')">【VTuber】カゲロウデイズ / 水瓶ミア【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len 妄想感傷代償連盟 DECO*27" id="B2-12">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-12"></td>
+          <td class="Ж 妄想感傷代償連盟 もうそうかんしょうだいしょうれんめい">妄想感傷代償連盟</td>
+          <td class="singer A2">DECO*27</td>
+          <td class="date A3">2019/2/27</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/bzLI7ovt2hY', 'blank')">【歌ってみた】DECO*27 - 妄想感傷代償連盟 feat. 水瓶ミア</button></td>
+        </tr>
+
+        <tr class="len さよならメモリーズ supercell" id="B2-13">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-13"></td>
+          <td class="Ж さよならメモリーズ さよならめもりーず">さよならメモリーズ</td>
+          <td class="singer A2">supercell</td>
+          <td class="date A3">2019/3/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/eCT2zvj-isY', 'blank')">【歌ってみた】supercell - さよならメモリーズ feat. 水瓶ミア</button></td>
+        </tr>
+
+        <tr class="len シャルル バルーン" id="B2-14">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-14"></td>
+          <td class="Ж シャルル しゃるる">シャルル</td>
+          <td class="singer A2">バルーン</td>
+          <td class="date A3">2019/4/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/p2VLnMCfRL4', 'blank')">【VTuber】シャルル / 水瓶ミア【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len エイリアンエイリアン ナユタン星人" id="B2-15">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-15"></td>
+          <td class="Ж エイリアンエイリアン えいりあんえいりあん">エイリアンエイリアン</td>
+          <td class="singer A2">ナユタン星人</td>
+          <td class="date A3">2019/4/12</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/-czXh7jbvNc', 'blank')">【歌ってみた】エイリアンエイリアン ナユタン星人 【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 私、アイドル宣言 CHiCOwithHoneyWorks" id="B2-16">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-16"></td>
+          <td class="Ж 私、アイドル宣言 わたしあいどるせんげん">私、アイドル宣言</td>
+          <td class="singer A2">CHiCO with HoneyWorks</td>
+          <td class="date A3">2019/4/19</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/EPSwt9iQQt8', 'blank')">【歌ってみた】└ ∵ ┐私、アイドル宣言 ／CHiCO with HoneyWorks【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len ミスター・ダーリン CHiCOwithHoneyWorks" id="B2-17">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-17"></td>
+          <td class="Ж ミスター・ダーリン みすたーだーりん">ミスター・ダーリン</td>
+          <td class="singer A2">CHiCO with HoneyWorks</td>
+          <td class="date A3">2019/4/26</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/EPSwt9iQQt8', 'blank')">┗ ∵ ┓ミスター・ダーリン／HoneyWorks feat 水瓶ミア 【VTuberが歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len ガールズトーク れるりり" id="B2-18">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-18"></td>
+          <td class="Ж ガールズトーク がーるずとーく">ガールズトーク</td>
+          <td class="singer A2">れるりり</td>
+          <td class="date A3">2019/4/27</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/JkfWp4focFU', 'blank')">【リアクト女子4人で】ガールズトーク【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len Hello,Morning KizunaAI" id="B2-19">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-19"></td>
+          <td class="Ж Hello,Morning はろーもーにんぐ">Hello, Morning</td>
+          <td class="singer A2">Kizuna AI</td>
+          <td class="date A3">2019/4/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/c2IAhf1c-jU', 'blank')">【水瓶ミア】Hello, Morning【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len 愛言葉Ⅲ DECO*27" id="B2-20">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-20"></td>
+          <td class="Ж 愛言葉Ⅲ あいことばさん">愛言葉Ⅲ</td>
+          <td class="singer A2">DECO*27</td>
+          <td class="date A3">2019/5/17</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Grzmdn2NnaU', 'blank')">【歌ってみたコラボ】愛言葉Ⅲ(DECO*27) / 水瓶ミア×朝霞しお</button></td>
+        </tr>
+
+        <tr class="len 君色に染まる 西沢さんP" id="B2-21">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-21"></td>
+          <td class="Ж 君色に染まる きみいろにそまる">君色に染まる</td>
+          <td class="singer A2">西沢さんP</td>
+          <td class="date A3">2019/6/17</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/OBylIExSyJc', 'blank')">【VTuber】TOKOTOKO(西沢さんP) - 君色に染まる / feat.水瓶ミア</button></td>
+        </tr>
+
+        <tr class="len ヒトガタ HIMEHINA" id="B2-22">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-22"></td>
+          <td class="Ж ヒトガタ ひとがた">ヒトガタ</td>
+          <td class="singer A2">HIMEHINA</td>
+          <td class="date A3">2019/6/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/xJZLv4GY6-c', 'blank')">MINAMIA『ヒトガタ』MV</button></td>
+        </tr>
+
+        <tr class="len 打上花火 DAOKO×米津玄師" id="B2-23">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-23"></td>
+          <td class="Ж 打上花火 うちあげはなび">打上花火</td>
+          <td class="singer A2">DAOKO × 米津玄師</td>
+          <td class="date A3">2019/7/19</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/l47J8exVbxg', 'blank')">【水瓶ミア×天条院アギト】打上花火 / DAOKO × 米津玄師【歌ってみた】</button></td>
+        </tr>
+
+        <tr class="len グランドエスケープ RADWIMPS" id="B2-24">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-24"></td>
+          <td class="Ж グランドエスケープ ぐらんどえすけーぷ">グランドエスケープ</td>
+          <td class="singer A2">RADWIMPS</td>
+          <td class="date A3">2019/9/1</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/PbMn5bohYck', 'blank')">みなみあ「グランドエスケープ」MV</button></td>
+        </tr>
+
+        <tr class="len 恋人失格 コレサワ" id="B2-25">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-25"></td>
+          <td class="Ж 恋人失格 こいびとしっかく">恋人失格</td>
+          <td class="singer A2">コレサワ</td>
+          <td class="date A3">2019/9/20</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/1NeP0PvD7BY', 'blank')">【歌ってみた】恋人失格(コレサワ) / feat.水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len キミがいる アリエP" id="B2-26">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-26"></td>
+          <td class="Ж キミがいる きみがいる">キミがいる</td>
+          <td class="singer A2">アリエP</td>
+          <td class="date A3">2019/12/13</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/pFbOwp3CEFw', 'blank')">【歌ってみた】キミがいる - アリエP/Covered by ちーむきゅーてぃくる</button></td>
+        </tr>
+
+        <tr class="len コネクト ClariS" id="B2-27">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-27"></td>
+          <td class="Ж コネクト こねくと">コネクト</td>
+          <td class="singer A2">ClariS</td>
+          <td class="date A3">2019/12/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/z1kLgutE4yI', 'blank')">【アニソン女性カバー】コネクト / feat.水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len Pretender Official髭男dism" id="B2-28">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-28"></td>
+          <td class="Ж Pretender ぷりてんだー">Pretender</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/1/20</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/YQqY3fG2Xf8', 'blank')">みなみあ「Pretender」MV</button></td>
+        </tr>
+
+        <tr class="len ファンサ mona(CV：夏川椎菜)" id="B2-29">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-29"></td>
+          <td class="Ж ファンサ ふぁんさ">ファンサ</td>
+          <td class="singer A2">mona(CV：夏川椎菜)</td>
+          <td class="date A3">2020/2/14</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/1Uod4sDP3oE', 'blank')">【ライブ再現】ファンサ /Honey Works / feat.水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len 嗚呼、素晴らしきニャン生 Nem" id="B2-30">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-30"></td>
+          <td class="Ж 嗚呼、素晴らしきニャン生 ああすばらしきにゃんせい">嗚呼、素晴らしきニャン生</td>
+          <td class="singer A2">Nem</td>
+          <td class="date A3">2020/2/7</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/LEA_ctnp2BU', 'blank')">【天羽よつは × 水瓶ミア】嗚呼、素晴らしきニャン生 【歌ってみたニャ】</button></td>
+        </tr>
+
+        <tr class="len 宿命 Official髭男dism" id="B2-31">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-31"></td>
+          <td class="Ж 宿命 しゅくめい">宿命</td>
+          <td class="singer A2">Official髭男dism</td>
+          <td class="date A3">2020/2/20</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/YB-7QOJR_xE', 'blank')">【女性カバー】宿命 / Official髭男dism / feat.水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len コールボーイ syudou" id="B2-32">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-32"></td>
+          <td class="Ж コールボーイ こーるぼーい">コールボーイ</td>
+          <td class="singer A2">syudou</td>
+          <td class="date A3">2020/2/24</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/wxvV5NnpxEo', 'blank')">【女性カバー】コールボーイ / syudou feat.水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len お願いマッスル 紗倉ひびき(CV:ファイルーズあい)&街雄鳴造(CV:石川界人)" id="B2-33">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-33"></td>
+          <td class="Ж お願いマッスル おねがいまっする">お願いマッスル</td>
+          <td class="singer A2">紗倉ひびき(CV:ファイルーズあい)&街雄鳴造(CV:石川界人)</td>
+          <td class="date A3">2020/4/22</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/7NyK2ZtXp0c', 'blank')">【ダンベル何キロ持てる？OP】お願いマッスル / 粛正罰丸×水瓶ミア【VTuber】</button></td>
+        </tr>
+
+        <tr class="len 点描の唄 Mrs.GREENAPPLE" id="B2-34">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-34"></td>
+          <td class="Ж 点描の唄 てんびょうのうた">点描の唄</td>
+          <td class="singer A2">Mrs. GREEN APPLE</td>
+          <td class="date A3">2020/6/6</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/EsxES25xSmE', 'blank')">【女性カバー】点描の唄 / 水瓶ミア×獅子神レオナ【VTuber】</button></td>
+        </tr>
+
+        <tr class="len ハッピーシンセサイザ EasyPop" id="B2-35">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-35"></td>
+          <td class="Ж ハッピーシンセサイザ はっぴーしんせさいざ">ハッピーシンセサイザ</td>
+          <td class="singer A2">EasyPop</td>
+          <td class="date A3">2020/9/5</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/qlVFgy64diM', 'blank')">【歌ってみた】ハッピーシンセサイザ/小森ねね×水瓶ミア</button></td>
+        </tr>
+
+        <tr class="len MILABO ずっと真夜中でいいのに。" id="B2-36">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-36"></td>
+          <td class="Ж MILABO みらぼ">MILABO</td>
+          <td class="singer A2">ずっと真夜中でいいのに。</td>
+          <td class="date A3">2020/9/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/_kf2VOGpULw', 'blank')">【女性カバー】MILABO / 水瓶ミア【ずとまよ】</button></td>
+        </tr>
+
+        <tr class="len 一分一秒君と僕の HoneyWorksmeetsスフィア" id="B2-37">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-37"></td>
+          <td class="Ж 一分一秒君と僕の いっぷんいちびょうきみとぼくの">一分一秒君と僕の</td>
+          <td class="singer A2">HoneyWorks meets スフィア</td>
+          <td class="date A3">2020/9/30</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/xssOsAsZko4', 'blank')">【歌ってみた】一分一秒君と僕の / 獅子神レオナ&花鋏キョウ&水瓶ミア &夢川かなう【Re:AcT二期生 2nd Anniversary】</button></td>
+        </tr>
+
+        <tr class="len チューリングラブ ナナヲアカリ" id="B2-38">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-38"></td>
+          <td class="Ж チューリングラブ ちゅーりんぐらぶ">チューリングラブ</td>
+          <td class="singer A2">ナナヲアカリ</td>
+          <td class="date A3">2021/3/2</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/AGYiVgRKCy4', 'blank')">【歌ってみた】チューリングラブ/ Covered by 獅子神レオナ×水瓶ミア【ナナヲアカリ】</button></td>
+        </tr>
+
+        <tr class="len うまぴょい伝説 ウマ娘プリティーダービー" id="B2-39">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-39"></td>
+          <td class="Ж うまぴょい伝説 うまぴょいでんせつ">うまぴょい伝説</td>
+          <td class="singer A2">ウマ娘 プリティーダービー</td>
+          <td class="date A3">2021/7/31</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/F9dk_93jHYE', 'blank')">ウマ娘好きなRe:AcTメンバーで「うまぴょい伝説」歌ってみた！【covered by 水瓶ミア/姫熊りぼん/犬望チロル/碧那アイル/白音ゆき/月紫アリア】</button></td>
+        </tr>
+
+        <tr class="len ToMyYouth BOL4" id="B2-40">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-40"></td>
+          <td class="Ж ToMyYouth tomyyouth とぅーまいゆーす">To My Youth</td>
+          <td class="singer A2">BOL4</td>
+          <td class="date A3">2021/11/16</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/Yp8Mz_0k45c', 'blank')">【中文/ENG】【cover】To My Youth / BOL4 : 나의 사춘기에게 /볼빨간사춘기【水瓶ミア】</button></td>
+        </tr>
+
+        <tr class="len 僕たちはひとつの光 μ's" id="B2-41">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-41"></td>
+          <td class="Ж 僕たちはひとつの光 ぼくたちはひとつのひかり">僕たちはひとつの光</td>
+          <td class="singer A2">μ's</td>
+          <td class="date A3">2021/12/25</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/fZlHMbhFgZY', 'blank')">【10人で歌ってみた】僕たちはひとつの光 /μ's 【Re:AcT cover】</button></td>
+        </tr>
+
+        <tr class="len 光るなら Goosehouse" id="B2-42">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-42"></td>
+          <td class="Ж 光るなら ひかるなら">光るなら</td>
+          <td class="singer A2">Goose house</td>
+          <td class="date A3">2022/1/26</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/K_pDrnPytfw', 'blank')">【歌ってみた】光るなら / Re:AcT (cover)【Goose house】</button></td>
+        </tr>
+
+        <tr class="len StaRt Mrs.GREENAPPLE" id="B2-43">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="2-43"></td>
+          <td class="Ж StaRt start すたーと">StaRt</td>
+          <td class="singer A2">Mrs. GREEN APPLE</td>
+          <td class="date A3">2021/3/12</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/IBGccToKAuQ', 'blank')">【歌ってみた】StaRt / ReAliz【Re:AcT/VTuber】</button></td>
+        </tr>
+
+      <!--オリ曲-->
+
+        <tr class="len ムーンライト。 水瓶ミア" id="B3-1">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-1"></td>
+          <td class="Ж ムーンライト。 むーんらいと">ムーンライト。</td>
+          <td class="singer A2">水瓶ミア</td>
+          <td class="date A3">2019/4/8</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/iN139b5hOT8', 'blank')">ムーンライト。</button></td>
+        </tr>
+
+        <tr class="len Since-Re:ly～シンシアリー～ Re:AprojecT" id="B3-2">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-2"></td>
+          <td class="Ж Since-Re:ly～シンシアリー～ しんしありー">Since-Re:ly ～シンシアリー～</td>
+          <td class="singer A2">Re:A projecT</td>
+          <td class="date A3">2019/4/8</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/8xfeej2eC2U', 'blank')">【オリジナル楽曲】Re:A projecT『Since-Re:ly ～シンシアリー～』【Re:AcT】</button></td>
+        </tr>
+
+        <tr class="len 風になれ恋心 花鋏キョウ・水瓶ミア" id="B3-3">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-3"></td>
+          <td class="Ж 風になれ恋心 かぜになれこいごころ">風になれ恋心</td>
+          <td class="singer A2">花鋏キョウ・水瓶ミア</td>
+          <td class="date A3">2019/5/2</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/67D75oChdew', 'blank')">【オリジナル楽曲】Re:A projecT 『風になれ恋心』【Re:AcT】</button></td>
+        </tr>
+
+        <tr class="len 星月夜。 水瓶ミア" id="B3-4">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-4"></td>
+          <td class="Ж 星月夜。 ほしづきよ">星月夜。</td>
+          <td class="singer A2">水瓶ミア</td>
+          <td class="date A3">2019/5/25</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/-Ajuvmf3y7o', 'blank')">Luna Melody - 星月夜。</button></td>
+        </tr>
+
+        <tr class="len Re:StarT Re:AcT1期生・2期生" id="B3-5">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-5"></td>
+          <td class="Ж Re:StarT りすたーと">Re:StarT</td>
+          <td class="singer A2">Re:AcT 1期生・2期生</td>
+          <td class="date A3">2020/11/28</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/yCSUGzSKrKg', 'blank')">【オリジナル楽曲】Re:StarT/Re:AcT【MV】</button></td>
+        </tr>
+
+        <tr class="len ホーンテッド・パーティーナイト Re:AcT2期生" id="B3-6">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-6"></td>
+          <td class="Ж ホーンテッド・パーティーナイト ほーんてっどぱーてぃーないと">ホーンテッド・パーティーナイト</td>
+          <td class="singer A2">Re:AcT 2期生</td>
+          <td class="date A3">2021/10/31</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/kILLgQpoX5k', 'blank')">【オリジナル曲】ホーンテッド・パーティーナイト-獅子神レオナ・花鋏キョウ・水瓶ミア・夢川かなう-【MV】</button></td>
+        </tr>
+
+        <tr class="len ProtoRebirth ReAliz" id="B3-7">
+          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="3-7"></td>
+          <td class="Ж ProtoRebirth protorebirth ぷろとりばーす">Proto Rebirth</td>
+          <td class="singer A2">ReAliz</td>
+          <td class="date A3">2022/4/26</td>
+          <td class="title A4"><button class="btn" onclick="window.open('https://youtu.be/xDB9ejkh9ZA', 'blank')">【オリジナル楽曲】Proto Rebirth / ReAliz【MV】</button></td>
+        </tr>
+
+
+
+
+
+
      </tbody>
     </table>
    </div>
@@ -486,49 +1640,150 @@
 
   var songlist = [
     {cd:"non", label:"選択なし", class:"non"},
-    {cd:"again", label:"again", class:"YUI"},
-    {cd:"阿修羅ちゃん", label:"阿修羅ちゃん", class:"Ado"},
-    {cd:"言って。", label:"言って。", class:"ヨルシカ"},
-    {cd:"ヴィラン", label:"ヴィラン", class:"てにをは"},
+    {cd:"嗚呼、素晴らしきニャン生", label:"嗚呼、素晴らしきニャン生", class:"Nem"},
+    {cd:"愛言葉Ⅲ", label:"愛言葉Ⅲ", class:"DECO*27"},
+    {cd:"アイネクライネ", label:"アイネクライネ", class:"米津玄師"},
+    {cd:"Ibegyou", label:"I beg you", class:"Aimer"},
+    {cd:"ILOVE...", label:"I LOVE...", class:"Official髭男dism"},
+    {cd:"ILOVEYOU", label:"I LOVE YOU", class:"尾崎豊"},
+    {cd:"愛を伝えたいだとか", label:"愛を伝えたいだとか", class:"あいみょん"},
+    {cd:"雨とペトラ", label:"雨とペトラ", class:"バルーン"},
+    {cd:"いーあるふぁんくらぶ", label:"いーあるふぁんくらぶ", class:"みきとP"},
+    {cd:"イエスタデイ", label:"イエスタデイ", class:"Official髭男dism"},
+    {cd:"いけないボーダーライン", label:"いけないボーダーライン", class:"ワルキューレ"},
+    {cd:"一分一秒君と僕の", label:"一分一秒君と僕の", class:"HoneyWorksmeetsスフィア"},
+    {cd:"打上花火", label:"打上花火", class:"DAOKO×米津玄師"},
+    {cd:"うっせぇわ", label:"うっせぇわ", class:"Ado"},
+    {cd:"うまぴょい伝説", label:"うまぴょい伝説", class:"ウマ娘プリティーダービー"},
+    {cd:"エイリアンエイリアン", label:"エイリアンエイリアン", class:"ナユタン星人"},
+    {cd:"エメラルドシティ", label:"エメラルドシティ", class:"西沢さんP"},
+    {cd:"おジャ魔女カーニバル!!", label:"おジャ魔女カーニバル!!", class:"MAHO堂"},
     {cd:"おじゃま虫", label:"おじゃま虫", class:"DECO*27"},
-    {cd:"廻廻奇譚", label:"廻廻奇譚", class:"Eve"},
-    {cd:"怪物", label:"怪物", class:"YOASOBI"},
-    {cd:"学園天国", label:"学園天国", class:"フィンガー5"},
+    {cd:"おねがいダーリン", label:"おねがいダーリン", class:"ナナホシ管弦楽団"},
+    {cd:"お願いマッスル", label:"お願いマッスル", class:"紗倉ひびき(CV:ファイルーズあい)&街雄鳴造(CV:石川界人)"},
+    {cd:"オリビアを聴きながら", label:"オリビアを聴きながら", class:"杏里"},
+    {cd:"onlymyrailgun", label:"only my railgun", class:"fripSide"},
+    {cd:"ガーネット", label:"ガーネット", class:"奥華子"},
+    {cd:"ガールズトーク", label:"ガールズトーク", class:"れるりり"},
+    {cd:"KAGAYAKISTARS!!", label:"KAGAYAKI STARS!!", class:"Re:AcT1期生"},
+    {cd:"カゲロウデイズ", label:"カゲロウデイズ", class:"じん(自然の敵P)"},
+    {cd:"風になる", label:"風になる", class:"つじあやの"},
+    {cd:"風になれ恋心", label:"風になれ恋心", class:"花鋏キョウ・水瓶ミア"},
     {cd:"カタオモイ", label:"カタオモイ", class:"Aimer"},
+    {cd:"神様の云う通り", label:"神様の云う通り", class:"西沢さんP"},
     {cd:"神っぽいな", label:"神っぽいな", class:"ピノキオピー"},
-    {cd:"からくりピエロ", label:"からくりピエロ", class:"40mP"},
-    {cd:"変わらないもの", label:"変わらないもの", class:"奥華子"},
-    {cd:"完全感覚Dreamer", label:"完全感覚Dreamer", class:"ONEOKROCK"},
-    {cd:"ギラギラ", label:"ギラギラ", class:"Ado"},
-    {cd:"CryBaby", label:"Cry Baby", class:"Official髭男dism"},
+    {cd:"可愛くなりたい", label:"可愛くなりたい", class:"HoneyWorks"},
+    {cd:"君色に染まる", label:"君色に染まる", class:"西沢さんP"},
+    {cd:"キミがいる", label:"キミがいる", class:"アリエP"},
+    {cd:"君じゃなきゃダメみたい", label:"君じゃなきゃダメみたい", class:"オーイシマサヨシ"},
+    {cd:"KING", label:"KING", class:"Kanaria"},
+    {cd:"グランドエスケープ", label:"グランドエスケープ", class:"RADWIMPS"},
     {cd:"紅蓮華", label:"紅蓮華", class:"LiSA"},
-    {cd:"GodKnows..", label:"God Knows..", class:"涼宮ハルヒ(CV.平野綾)"},
+    {cd:"紅蓮の弓矢", label:"紅蓮の弓矢", class:"LinkedHorizon"},
+    {cd:"glow", label:"glow", class:"keeno"},
+    {cd:"恋空予報", label:"恋空予報", class:"電ポルP"},
+    {cd:"恋の魔法", label:"恋の魔法", class:"ぱなまん×西沢さんP"},
+    {cd:"恋人失格", label:"恋人失格", class:"コレサワ"},
+    {cd:"コイワズライ", label:"コイワズライ", class:"Aimer"},
+    {cd:"コールボーイ", label:"コールボーイ", class:"syudou"},
+    {cd:"虎視眈々", label:"虎視眈々", class:"梅とら"},
+    {cd:"こちら、幸福安心委員会です。", label:"こちら、幸福安心委員会です。", class:"うたたP"},
     {cd:"コネクト", label:"コネクト", class:"ClariS"},
-    {cd:"残響散歌", label:"残響散歌", class:"Aimer"},
-    {cd:"JustBeFriends", label:"Just Be Friends", class:"DixieFlatline"},
+    {cd:"再生", label:"再生", class:"におP"},
+    {cd:"SAKURA", label:"SAKURA", class:"いきものがかり"},
+    {cd:"サリシノハラ", label:"サリシノハラ", class:"みきとP"},
+    {cd:"小夜子", label:"小夜子", class:"みきとP"},
+    {cd:"さよならメモリーズ", label:"さよならメモリーズ", class:"supercell"},
+    {cd:"SUN", label:"SUN", class:"星野源"},
+    {cd:"シグナル", label:"シグナル", class:"綺羅星ウタ・獅子神レオナ・丑牡てぃあ"},
+    {cd:"シャルル", label:"シャルル", class:"バルーン"},
     {cd:"10月無口な君を忘れる", label:"10月無口な君を忘れる", class:"あたらよ"},
-    {cd:"瞬間センチメンタル", label:"瞬間センチメンタル", class:"SCANDAL"},
-    {cd:"SWEETMEMORIES", label:"SWEET MEMORIES", class:"松田聖子"},
-    {cd:"Snowhalation", label:"Snow halation", class:"μ's"},
-    {cd:"星間飛行", label:"星間飛行", class:"ランカ・リー(CV.中島愛)"},
-    {cd:"だから僕は音楽を辞めた", label:"だから僕は音楽を辞めた", class:"ヨルシカ"},
-    {cd:"ただ君に晴れ", label:"ただ君に晴れ", class:"ヨルシカ"},
-    {cd:"たばこ", label:"たばこ", class:"コレサワ"},
-    {cd:"CH4NGE", label:"CH4NGE", class:"Giga"},
-    {cd:"名前のない怪物", label:"名前のない怪物", class:"EGOIST"},
+    {cd:"シュガーソングとビターステップ", label:"シュガーソングとビターステップ", class:"UNISONSQUAREGARDEN"},
+    {cd:"宿命", label:"宿命", class:"Official髭男dism"},
+    {cd:"シル・ヴ・プレジデント", label:"シル・ヴ・プレジデント", class:"P丸様。"},
+    {cd:"Since-Re:ly～シンシアリー～", label:"Since-Re:ly ～シンシアリー～", class:"Re:AprojecT"},
+    {cd:"心拍数♯0822", label:"心拍数♯0822", class:"蝶々P"},
+    {cd:"スキキライ", label:"スキキライ", class:"HoneyWorks"},
+    {cd:"StaRt", label:"StaRt", class:"Mrs.GREENAPPLE"},
+    {cd:"スパークル", label:"スパークル", class:"RADWIMPS"},
+    {cd:"全力少年", label:"全力少年", class:"スキマスイッチ"},
+    {cd:"そっけない", label:"そっけない", class:"RADWIMPS"},
+    {cd:"Dynamite", label:"Dynamite", class:"BTS"},
+    {cd:"TimeGoesBy", label:"Time Goes By", class:"EveryLittleThing"},
+    {cd:"たぶん", label:"たぶん", class:"YOASOBI"},
+    {cd:"DANZEN!ふたりはプリキュア", label:"DANZEN! ふたりはプリキュア", class:"五條真由美"},
+    {cd:"チューリングラブ", label:"チューリングラブ", class:"ナナヲアカリ"},
+    {cd:"チュルリラ・チュルリラ・ダッダッダ！", label:"チュルリラ・チュルリラ・ダッダッダ！", class:"和田たけあき(くらげP)"},
+    {cd:"TT", label:"TT", class:"TWICE"},
+    {cd:"TEENAGERIOT", label:"TEENAGE RIOT", class:"米津玄師"},
+    {cd:"テレキャスタービーボーイ", label:"テレキャスタービーボーイ", class:"すりぃ"},
+    {cd:"点描の唄", label:"点描の唄", class:"Mrs.GREENAPPLE"},
+    {cd:"ToMyYouth", label:"To My Youth", class:"BOL4"},
+    {cd:"Tómur", label:"Tómur", class:"におP"},
+    {cd:"ドライフラワー", label:"ドライフラワー", class:"優里"},
+    {cd:"トリセツ", label:"トリセツ", class:"西野カナ"},
     {cd:"なんでもないや", label:"なんでもないや", class:"RADWIMPS"},
-    {cd:"ハム太郎とっとこうた", label:"ハム太郎とっとこうた", class:"ハムちゃんず"},
-    {cd:"ファンサ", label:"ファンサ", class:"mona(CV.夏川椎菜)"},
-    {cd:"Boo!", label:"Boo!", class:"西沢さんP"},
-    {cd:"BlackCherry", label:"Black Cherry", class:"AcidBlackCherry"},
+    {cd:"脳裏上のクラッカー", label:"脳裏上のクラッカー", class:"ずっと真夜中でいいのに。"},
+    {cd:"ノーダウト", label:"ノーダウト", class:"Official髭男dism"},
+    {cd:"ハートトゥハート", label:"ハートトゥハート", class:"西沢さんP"},
+    {cd:"初恋の絵本", label:"初恋の絵本", class:"HoneyWorks"},
+    {cd:"ハッピーシンセサイザ", label:"ハッピーシンセサイザ", class:"EasyPop"},
+    {cd:"HappyHalloween", label:"Happy Halloween", class:"Junky"},
+    {cd:"ハナミズキ", label:"ハナミズキ", class:"一青窈"},
+    {cd:"パプリカ", label:"パプリカ", class:"米津玄師"},
+    {cd:"パラボラ", label:"パラボラ", class:"Official髭男dism"},
+    {cd:"ハルノヒ", label:"ハルノヒ", class:"あいみょん"},
+    {cd:"バレリーコ", label:"バレリーコ", class:"みきとP"},
+    {cd:"Hello,Morning", label:"Hello, Morning", class:"KizunaAI"},
+    {cd:"ピースサイン", label:"ピースサイン", class:"米津玄師"},
+    {cd:"ビースト・ダンス", label:"ビースト・ダンス", class:"和田たけあき(くらげP)"},
+    {cd:"ピエロ", label:"ピエロ", class:"ハヤシケイ/KEI"},
+    {cd:"光るなら", label:"光るなら", class:"Goosehouse"},
+    {cd:"HIP", label:"HIP", class:"마마무(MAMAMOO)"},
+    {cd:"ヒトガタ", label:"ヒトガタ", class:"HIMEHINA"},
+    {cd:"115万キロのフィルム", label:"115万キロのフィルム", class:"Official髭男dism"},
+    {cd:"ヒロイン", label:"ヒロイン", class:"backnumber"},
+    {cd:"ファンサ", label:"ファンサ", class:"mona(CV：夏川椎菜)"},
+    {cd:"Booo!", label:"Booo!", class:"西沢さんP"},
+    {cd:"プラチナ", label:"プラチナ", class:"坂本真綾"},
+    {cd:"Flamingo", label:"Flamingo", class:"米津玄師"},
+    {cd:"Pretender", label:"Pretender", class:"Official髭男dism"},
     {cd:"ブルーバード", label:"ブルーバード", class:"いきものがかり"},
-    {cd:"ふわふわ時間", label:"ふわふわ時間", class:"放課後ティータイム"},
-    {cd:"僕らは今のなかで", label:"僕らは今のなかで", class:"μ's"},
-    {cd:"YUME日和", label:"YUME日和", class:"島谷ひとみ"},
-    {cd:"吉原ラメント", label:"吉原ラメント", class:"亜沙"},
-    {cd:"レディメイド", label:"レディメイド", class:"Ado"},
-    {cd:"ロミオとシンデレラ", label:"ロミオとシンデレラ", class:"doriko"},
-    {cd:"ワールドイズマイン", label:"ワールドイズマイン", class:"ryo"}
+    {cd:"ProtoRebirth", label:"Proto Rebirth", class:"ReAliz"},
+    {cd:"別の人の彼女になったよ", label:"別の人の彼女になったよ", class:"wacci"},
+    {cd:"ヘビースモーク", label:"ヘビースモーク", class:"にしな"},
+    {cd:"ホーンテッド・パーティーナイト", label:"ホーンテッド・パーティーナイト", class:"Re:AcT2期生"},
+    {cd:"僕たちはひとつの光", label:"僕たちはひとつの光", class:"μ's"},
+    {cd:"星月夜。", label:"星月夜。", class:"水瓶ミア"},
+    {cd:"炎", label:"炎", class:"LiSA"},
+    {cd:"またねがあれば", label:"またねがあれば", class:"當山みれい"},
+    {cd:"マトリョシカ(ポケモシカ)", label:"マトリョシカ(ポケモシカ)", class:"ハチ"},
+    {cd:"右肩の蝶", label:"右肩の蝶", class:"のりP"},
+    {cd:"ミスター・ダーリン", label:"ミスター・ダーリン", class:"CHiCOwithHoneyWorks"},
+    {cd:"ミライチズ", label:"ミライチズ", class:"HoneyWorksfeat.夜のひと笑い"},
+    {cd:"MILABO", label:"MILABO", class:"ずっと真夜中でいいのに。"},
+    {cd:"ムーンライト。", label:"ムーンライト。", class:"水瓶ミア"},
+    {cd:"ムーンライト伝説", label:"ムーンライト伝説", class:"DALI"},
+    {cd:"MakeYouHappy", label:"Make You Happy", class:"NiziU"},
+    {cd:"めざせポケモンマスター", label:"めざせポケモンマスター", class:"松本梨香"},
+    {cd:"メルト", label:"メルト", class:"あいみょryoん"},
+    {cd:"妄想感傷代償連盟", label:"妄想感傷代償連盟", class:"DECO*27"},
+    {cd:"멋쟁이토마토(おしゃれなトマト)", label:"멋쟁이 토마토(おしゃれなトマト)", class:"-"},
+    {cd:"夢色エール", label:"夢色エール", class:"花鋏キョウ・双里マイ・ゆにゆにこ"},
+    {cd:"夢をかなえてドラえもん", label:"夢をかなえてドラえもん", class:"mao"},
+    {cd:"夜に駆ける", label:"夜に駆ける", class:"YOASOBI"},
+    {cd:"ReAct", label:"ReAct", class:"黒うさP"},
+    {cd:"Re:StarT", label:"Re:StarT", class:"Re:AcT1期生・2期生"},
+    {cd:"理想論", label:"理想論", class:"におP"},
+    {cd:"ルマ", label:"ルマ", class:"かいりきベア"},
+    {cd:"レイニーブルー", label:"レイニーブルー", class:"德永英明"},
+    {cd:"劣等上等", label:"劣等上等", class:"Giga"},
+    {cd:"ロキ", label:"ロキ", class:"みきとP"},
+    {cd:"ワールドイズマイン", label:"ワールドイズマイン", class:"ryo"},
+    {cd:"ワールド・ランプシェード", label:"ワールド・ランプシェード", class:"buzzG"},
+    {cd:"惑星ループ", label:"惑星ループ", class:"ナユタン星人"},
+    {cd:"私、アイドル宣言", label:"私、アイドル宣言", class:"CHiCOwithHoneyWorks"},
+    {cd:"1・2・3", label:"1・2・3", class:"AftertheRain"}
    ];
 
  var AmountElements = document.getElementsByClassName("len");
