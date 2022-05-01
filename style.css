@@ -3,17 +3,16 @@ font-size: small;
 width: 100%;
 margin:0;
 padding:0;
-background-color: #8b0000;
+background-color: #94adda;
 }
 
 div.fav{
  margin:0;
  padding:0;
  background-image:url('/image.jpg');
- background-position:center center;
- background-size:100% auto;
- background-repeat: no-repeat;
- opacity:0.8;
+ background-position:left -135px;
+ background-size:auto auto;
+ background-repeat: repeat;
 }
 
 
@@ -21,15 +20,15 @@ h1#strcolor1{
 
 margin:0;
 padding:0;
-color: #800000;
--webkit-text-stroke: 0.5px #fff;
+color: #043c78;
+-webkit-text-stroke: 0.5px #001e43;
 }
 
 .strcolor2{
 font-weight:bolder;
  font-size: medium;
-color:#8b0000;
--webkit-text-stroke: 0.25px #fff;
+color:#001e43;
+-webkit-text-stroke: 0.7px #00afcc;
 }
 
 
@@ -56,7 +55,7 @@ select#category-second{
 
 div#users{
 
-background-color: #d89999;
+background-color: #c6e2ff;
 margin:0;
 padding:0;
 }
@@ -68,12 +67,18 @@ table {
 }
 
 th,td {
-   background-color: #d89999;
+   background-color: #c6e2ff;
    border: solid 1px;   /* 枠線指定 */
 }
 
+.singer{
+ overflow:hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
 .checkbox{
-  background-color: #d89999;
+  background-color: #c6e2ff;
   border: 0px none;
 }
 
@@ -95,7 +100,7 @@ th.A2{
 
 /*配信日*/
 th.A3 {
-  width: 75px;
+  width: 80px;
 }
 
 /*配信タイトル*/
@@ -121,7 +126,7 @@ button.btn{
 text-align: left;
 width: 100%;
 border: none;
-background-color: #cb7a82;
+background-color: #9eceff;
 }
 
 .title{
