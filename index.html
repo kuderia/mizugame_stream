@@ -1832,6 +1832,11 @@ function changeCategory() {
   if (checkboxA.checked == true){
     favcheck();
   }
+  if (checkboxB.checked == true){
+    for(i=0; i<SEcounts; i++){
+      SingElements[i].style.display = "none";
+    }
+  }
   ChangeSelectboxSong();
   SearcBoxElement.value = null;
 }
@@ -1859,6 +1864,11 @@ function changeCategory2() {
   if (checkboxA.checked == true){
     favcheck();
   }
+  if (checkboxB.checked == true){
+    for(i=0; i<SEcounts; i++){
+      SingElements[i].style.display = "none";
+    }
+  }
   SearcBoxElement.value = null;
 }
 
@@ -1883,6 +1893,7 @@ function reset(){
     AmountElements[i].style.display = "";
   }
   checkboxA.checked = false;
+  checkboxB.checked = false;
   SearcBoxElement.value = null;
 }
 
@@ -2011,6 +2022,7 @@ function songsearch(){
          AmountElements[i].style.display = "";
    }
   checkboxA.checked = false;
+  checkboxB.checked = false;
 }
 
  </script>
