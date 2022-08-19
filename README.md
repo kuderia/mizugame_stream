@@ -1,1 +1,1 @@
-"# mizugame_stream" 
+"# mikoshi_stream"
